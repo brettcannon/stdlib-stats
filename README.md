@@ -2,31 +2,11 @@
 
 Various statistics on Python's standard library.
 
-## Statistics
+XXX stored to a sqlite3 database
 
-### Required for startup
-
-Determined by whether the module is used to run `-S -c "pass"`.
-
-### LOC
-
-XXX
-
-### Open PRs
-
-XXX take into account module age
-
-### Commits
-
-XXX take into account module age
-
-### Usage in the community
-
-XXX
-
-## Technical
-
-### Connecting private modules to their public dependents
+## Map module to public module
+Public availability is (mostly) determined by documentation existing in
+`Doc/library/`.
 
 `private_modules.json` maps public modules to any private modules they depend
 on. For modules that are "cheating" and using private modules directly instead
@@ -36,22 +16,18 @@ of their equivalent public API, they not listed as a dependent
 
 Data is verified via `private_modules.py`.
 
-### Mapping paths to modules
+## Map file to module
+Ignores Argument Clinic files, but includes header files.
 
 XXX
 
-### Counting LOC
+## Module details
 
-XXX
-
-### Module age
-
-XXX
-
-### Collecting module usage on GitHub
-
-XXX
-
-### Usage by the community
+- Release and date the module was introduced (inferred by the firt date of a
+  `X.Y.0` release that comes after the earliest commit of any file for a module)
+- Required to start CPython (based on `python -v -S -c "pass"`)
+- Number of open PRs (based on files edited by PRs targeting `master`)
+- Number of commits (based on total commits for all files that make up the module)
+- Usage by public projects/repos count
 
 XXX
