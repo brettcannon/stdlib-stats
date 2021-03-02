@@ -1,3 +1,9 @@
+"""Validate data in private_modules.json.
+
+Keys are a list of all public/documented modules. The values are the lists of
+private/non-public modules that the public module relies on.
+"""
+
 import json
 import pathlib
 import sys
@@ -29,7 +35,7 @@ for item in library_docs.iterdir():
 public_modules = frozenset(public_modules)
 private_modules = sys.stdlib_module_names - public_modules
 
-with open("private_modules.json", "r") as file:
+with open("private_modules.json", "r", encoding="utf-8") as file:
     module_mapping = json.load(file)
 written_public_modules = frozenset(module_mapping.keys())
 if diff := written_public_modules - public_modules:
