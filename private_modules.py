@@ -8,6 +8,9 @@ import json
 import pathlib
 import sys
 
+with open("module_names.json", "r", encoding="utf-8") as file:
+    module_names = frozenset(json.load(file))
+
 
 repo_location = pathlib.Path(sys.argv[1])
 library_docs = repo_location / "Doc" / "library"
@@ -29,11 +32,11 @@ for item in library_docs.iterdir():
         continue
 
     name = filename.partition(".")[0]
-    if name in sys.stdlib_module_names:
+    if name in module_names:
         public_modules.add(name)
 
 public_modules = frozenset(public_modules)
-private_modules = sys.stdlib_module_names - public_modules
+private_modules = module_names - public_modules
 
 with open("private_modules.json", "r", encoding="utf-8") as file:
     module_mapping = json.load(file)
