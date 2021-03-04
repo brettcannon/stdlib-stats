@@ -1,0 +1,1686 @@
+{
+  "__future__": [
+    "Lib/__future__.py"
+  ],
+  "_abc": [
+    "Modules/_abc.c"
+  ],
+  "_aix_support": [
+    "Lib/_aix_support.py",
+    "Modules/ld_so_aix.in",
+    "Modules/makexp_aix"
+  ],
+  "_ast": [],
+  "_asyncio": [
+    "Modules/_asynciomodule.c"
+  ],
+  "_bisect": [
+    "Modules/_bisectmodule.c"
+  ],
+  "_blake2": [],
+  "_bootsubprocess": [
+    "Lib/_bootsubprocess.py"
+  ],
+  "_bz2": [
+    "Modules/_bz2module.c"
+  ],
+  "_codecs": [
+    "Modules/_codecsmodule.c"
+  ],
+  "_codecs_cn": [],
+  "_codecs_hk": [],
+  "_codecs_iso2022": [],
+  "_codecs_jp": [],
+  "_codecs_kr": [],
+  "_codecs_tw": [],
+  "_collections": [
+    "Modules/_collectionsmodule.c"
+  ],
+  "_collections_abc": [
+    "Lib/_collections_abc.py"
+  ],
+  "_compat_pickle": [
+    "Lib/_compat_pickle.py"
+  ],
+  "_compression": [
+    "Lib/_compression.py"
+  ],
+  "_contextvars": [
+    "Modules/_contextvarsmodule.c"
+  ],
+  "_crypt": [
+    "Modules/_cryptmodule.c"
+  ],
+  "_csv": [
+    "Modules/_csv.c"
+  ],
+  "_ctypes": [],
+  "_curses": [
+    "Modules/_cursesmodule.c"
+  ],
+  "_curses_panel": [
+    "Modules/_curses_panel.c"
+  ],
+  "_datetime": [
+    "Modules/_datetimemodule.c"
+  ],
+  "_dbm": [
+    "Modules/_dbmmodule.c"
+  ],
+  "_decimal": [],
+  "_elementtree": [
+    "Modules/_elementtree.c"
+  ],
+  "_functools": [
+    "Modules/_functoolsmodule.c"
+  ],
+  "_gdbm": [
+    "Modules/_gdbmmodule.c"
+  ],
+  "_hashlib": [
+    "Modules/_hashopenssl.c"
+  ],
+  "_heapq": [
+    "Modules/_heapqmodule.c"
+  ],
+  "_imp": [],
+  "_io": [],
+  "_json": [
+    "Modules/_json.c"
+  ],
+  "_locale": [
+    "Modules/_localemodule.c"
+  ],
+  "_lsprof": [
+    "Modules/_lsprof.c",
+    "Modules/rotatingtree.c",
+    "Modules/rotatingtree.h"
+  ],
+  "_lzma": [
+    "Modules/_lzmamodule.c"
+  ],
+  "_markupbase": [
+    "Lib/_markupbase.py"
+  ],
+  "_md5": [
+    "Modules/md5module.c"
+  ],
+  "_msi": [],
+  "_multibytecodec": [],
+  "_multiprocessing": [],
+  "_opcode": [
+    "Modules/_opcode.c"
+  ],
+  "_operator": [
+    "Modules/_operator.c"
+  ],
+  "_osx_support": [
+    "Lib/_osx_support.py"
+  ],
+  "_pickle": [
+    "Modules/_pickle.c"
+  ],
+  "_posixshmem": [],
+  "_posixsubprocess": [
+    "Modules/_posixsubprocess.c"
+  ],
+  "_py_abc": [
+    "Lib/_py_abc.py"
+  ],
+  "_pydecimal": [
+    "Lib/_pydecimal.py"
+  ],
+  "_pyio": [
+    "Lib/_pyio.py"
+  ],
+  "_queue": [
+    "Modules/_queuemodule.c"
+  ],
+  "_random": [
+    "Modules/_randommodule.c"
+  ],
+  "_sha1": [
+    "Modules/sha1module.c"
+  ],
+  "_sha256": [
+    "Modules/sha256module.c"
+  ],
+  "_sha3": [],
+  "_sha512": [
+    "Modules/sha512module.c"
+  ],
+  "_signal": [],
+  "_sitebuiltins": [
+    "Lib/_sitebuiltins.py"
+  ],
+  "_socket": [],
+  "_sqlite3": [],
+  "_sre": [
+    "Modules/_sre.c",
+    "Modules/sre.h",
+    "Modules/sre_lib.h"
+  ],
+  "_ssl": [
+    "Modules/_ssl.c",
+    "Modules/_ssl_data.h"
+  ],
+  "_stat": [
+    "Modules/_stat.c"
+  ],
+  "_statistics": [
+    "Modules/_statisticsmodule.c"
+  ],
+  "_string": [],
+  "_strptime": [
+    "Lib/_strptime.py"
+  ],
+  "_struct": [
+    "Modules/_struct.c"
+  ],
+  "_symtable": [],
+  "_thread": [
+    "Modules/_threadmodule.c"
+  ],
+  "_threading_local": [
+    "Lib/_threading_local.py"
+  ],
+  "_tkinter": [
+    "Modules/_tkinter.c",
+    "Modules/tkappinit.c"
+  ],
+  "_tracemalloc": [
+    "Modules/_tracemalloc.c"
+  ],
+  "_uuid": [
+    "Modules/_uuidmodule.c"
+  ],
+  "_warnings": [],
+  "_weakref": [
+    "Modules/_weakref.c"
+  ],
+  "_weakrefset": [
+    "Lib/_weakrefset.py"
+  ],
+  "_winapi": [
+    "Modules/_winapi.c",
+    "Modules/overlapped.c",
+    "Modules/winreparse.h"
+  ],
+  "_xxsubinterpreters": [
+    "Modules/_xxsubinterpretersmodule.c"
+  ],
+  "_zoneinfo": [
+    "Modules/_zoneinfo.c"
+  ],
+  "abc": [
+    "Lib/abc.py"
+  ],
+  "aifc": [
+    "Lib/aifc.py"
+  ],
+  "antigravity": [
+    "Lib/antigravity.py"
+  ],
+  "argparse": [
+    "Lib/argparse.py"
+  ],
+  "array": [
+    "Modules/arraymodule.c"
+  ],
+  "ast": [
+    "Lib/ast.py"
+  ],
+  "asynchat": [
+    "Lib/asynchat.py"
+  ],
+  "asyncio": [
+    "Lib/asyncio/__init__.py",
+    "Lib/asyncio/__main__.py",
+    "Lib/asyncio/base_events.py",
+    "Lib/asyncio/base_futures.py",
+    "Lib/asyncio/base_subprocess.py",
+    "Lib/asyncio/base_tasks.py",
+    "Lib/asyncio/constants.py",
+    "Lib/asyncio/coroutines.py",
+    "Lib/asyncio/events.py",
+    "Lib/asyncio/exceptions.py",
+    "Lib/asyncio/format_helpers.py",
+    "Lib/asyncio/futures.py",
+    "Lib/asyncio/locks.py",
+    "Lib/asyncio/log.py",
+    "Lib/asyncio/mixins.py",
+    "Lib/asyncio/proactor_events.py",
+    "Lib/asyncio/protocols.py",
+    "Lib/asyncio/queues.py",
+    "Lib/asyncio/runners.py",
+    "Lib/asyncio/selector_events.py",
+    "Lib/asyncio/sslproto.py",
+    "Lib/asyncio/staggered.py",
+    "Lib/asyncio/streams.py",
+    "Lib/asyncio/subprocess.py",
+    "Lib/asyncio/tasks.py",
+    "Lib/asyncio/threads.py",
+    "Lib/asyncio/transports.py",
+    "Lib/asyncio/trsock.py",
+    "Lib/asyncio/unix_events.py",
+    "Lib/asyncio/windows_events.py",
+    "Lib/asyncio/windows_utils.py",
+    "Modules/overlapped.c"
+  ],
+  "asyncore": [
+    "Lib/asyncore.py"
+  ],
+  "atexit": [
+    "Modules/atexitmodule.c"
+  ],
+  "audioop": [
+    "Modules/audioop.c"
+  ],
+  "base64": [
+    "Lib/base64.py"
+  ],
+  "bdb": [
+    "Lib/bdb.py"
+  ],
+  "binascii": [
+    "Modules/binascii.c"
+  ],
+  "binhex": [
+    "Lib/binhex.py"
+  ],
+  "bisect": [
+    "Lib/bisect.py"
+  ],
+  "builtins": [],
+  "bz2": [
+    "Lib/bz2.py"
+  ],
+  "cProfile": [
+    "Lib/cProfile.py"
+  ],
+  "calendar": [
+    "Lib/calendar.py"
+  ],
+  "cgi": [
+    "Lib/cgi.py"
+  ],
+  "cgitb": [
+    "Lib/cgitb.py"
+  ],
+  "chunk": [
+    "Lib/chunk.py"
+  ],
+  "cmath": [
+    "Modules/_math.c",
+    "Modules/_math.h",
+    "Modules/cmathmodule.c"
+  ],
+  "cmd": [
+    "Lib/cmd.py"
+  ],
+  "code": [
+    "Lib/code.py"
+  ],
+  "codecs": [
+    "Lib/codecs.py"
+  ],
+  "codeop": [
+    "Lib/codeop.py"
+  ],
+  "collections": [
+    "Lib/collections/__init__.py",
+    "Lib/collections/abc.py"
+  ],
+  "colorsys": [
+    "Lib/colorsys.py"
+  ],
+  "compileall": [
+    "Lib/compileall.py"
+  ],
+  "concurrent": [
+    "Lib/concurrent/__init__.py",
+    "Lib/concurrent/futures/__init__.py",
+    "Lib/concurrent/futures/_base.py",
+    "Lib/concurrent/futures/process.py",
+    "Lib/concurrent/futures/thread.py"
+  ],
+  "configparser": [
+    "Lib/configparser.py"
+  ],
+  "contextlib": [
+    "Lib/contextlib.py"
+  ],
+  "contextvars": [
+    "Lib/contextvars.py"
+  ],
+  "copy": [
+    "Lib/copy.py"
+  ],
+  "copyreg": [
+    "Lib/copyreg.py"
+  ],
+  "crypt": [
+    "Lib/crypt.py"
+  ],
+  "csv": [
+    "Lib/csv.py"
+  ],
+  "ctypes": [
+    "Lib/ctypes/__init__.py",
+    "Lib/ctypes/_aix.py",
+    "Lib/ctypes/_endian.py",
+    "Lib/ctypes/macholib/README.ctypes",
+    "Lib/ctypes/macholib/__init__.py",
+    "Lib/ctypes/macholib/dyld.py",
+    "Lib/ctypes/macholib/dylib.py",
+    "Lib/ctypes/macholib/fetch_macholib",
+    "Lib/ctypes/macholib/fetch_macholib.bat",
+    "Lib/ctypes/macholib/framework.py",
+    "Lib/ctypes/test/__init__.py",
+    "Lib/ctypes/test/__main__.py",
+    "Lib/ctypes/test/test_anon.py",
+    "Lib/ctypes/test/test_array_in_pointer.py",
+    "Lib/ctypes/test/test_arrays.py",
+    "Lib/ctypes/test/test_as_parameter.py",
+    "Lib/ctypes/test/test_bitfields.py",
+    "Lib/ctypes/test/test_buffers.py",
+    "Lib/ctypes/test/test_bytes.py",
+    "Lib/ctypes/test/test_byteswap.py",
+    "Lib/ctypes/test/test_callbacks.py",
+    "Lib/ctypes/test/test_cast.py",
+    "Lib/ctypes/test/test_cfuncs.py",
+    "Lib/ctypes/test/test_checkretval.py",
+    "Lib/ctypes/test/test_delattr.py",
+    "Lib/ctypes/test/test_errno.py",
+    "Lib/ctypes/test/test_find.py",
+    "Lib/ctypes/test/test_frombuffer.py",
+    "Lib/ctypes/test/test_funcptr.py",
+    "Lib/ctypes/test/test_functions.py",
+    "Lib/ctypes/test/test_incomplete.py",
+    "Lib/ctypes/test/test_init.py",
+    "Lib/ctypes/test/test_internals.py",
+    "Lib/ctypes/test/test_keeprefs.py",
+    "Lib/ctypes/test/test_libc.py",
+    "Lib/ctypes/test/test_loading.py",
+    "Lib/ctypes/test/test_macholib.py",
+    "Lib/ctypes/test/test_memfunctions.py",
+    "Lib/ctypes/test/test_numbers.py",
+    "Lib/ctypes/test/test_objects.py",
+    "Lib/ctypes/test/test_parameters.py",
+    "Lib/ctypes/test/test_pep3118.py",
+    "Lib/ctypes/test/test_pickling.py",
+    "Lib/ctypes/test/test_pointers.py",
+    "Lib/ctypes/test/test_prototypes.py",
+    "Lib/ctypes/test/test_python_api.py",
+    "Lib/ctypes/test/test_random_things.py",
+    "Lib/ctypes/test/test_refcounts.py",
+    "Lib/ctypes/test/test_repr.py",
+    "Lib/ctypes/test/test_returnfuncptrs.py",
+    "Lib/ctypes/test/test_simplesubclasses.py",
+    "Lib/ctypes/test/test_sizes.py",
+    "Lib/ctypes/test/test_slicing.py",
+    "Lib/ctypes/test/test_stringptr.py",
+    "Lib/ctypes/test/test_strings.py",
+    "Lib/ctypes/test/test_struct_fields.py",
+    "Lib/ctypes/test/test_structures.py",
+    "Lib/ctypes/test/test_unaligned_structures.py",
+    "Lib/ctypes/test/test_unicode.py",
+    "Lib/ctypes/test/test_values.py",
+    "Lib/ctypes/test/test_varsize_struct.py",
+    "Lib/ctypes/test/test_win32.py",
+    "Lib/ctypes/test/test_wintypes.py",
+    "Lib/ctypes/util.py",
+    "Lib/ctypes/wintypes.py"
+  ],
+  "curses": [
+    "Lib/curses/__init__.py",
+    "Lib/curses/ascii.py",
+    "Lib/curses/has_key.py",
+    "Lib/curses/panel.py",
+    "Lib/curses/textpad.py"
+  ],
+  "dataclasses": [
+    "Lib/dataclasses.py"
+  ],
+  "datetime": [
+    "Lib/datetime.py"
+  ],
+  "dbm": [
+    "Lib/dbm/__init__.py",
+    "Lib/dbm/dumb.py",
+    "Lib/dbm/gnu.py",
+    "Lib/dbm/ndbm.py"
+  ],
+  "decimal": [
+    "Lib/decimal.py"
+  ],
+  "difflib": [
+    "Lib/difflib.py"
+  ],
+  "dis": [
+    "Lib/dis.py"
+  ],
+  "distutils": [
+    "Lib/distutils/README",
+    "Lib/distutils/__init__.py",
+    "Lib/distutils/_msvccompiler.py",
+    "Lib/distutils/archive_util.py",
+    "Lib/distutils/bcppcompiler.py",
+    "Lib/distutils/ccompiler.py",
+    "Lib/distutils/cmd.py",
+    "Lib/distutils/command/__init__.py",
+    "Lib/distutils/command/bdist.py",
+    "Lib/distutils/command/bdist_dumb.py",
+    "Lib/distutils/command/bdist_msi.py",
+    "Lib/distutils/command/bdist_rpm.py",
+    "Lib/distutils/command/build.py",
+    "Lib/distutils/command/build_clib.py",
+    "Lib/distutils/command/build_ext.py",
+    "Lib/distutils/command/build_py.py",
+    "Lib/distutils/command/build_scripts.py",
+    "Lib/distutils/command/check.py",
+    "Lib/distutils/command/clean.py",
+    "Lib/distutils/command/command_template",
+    "Lib/distutils/command/config.py",
+    "Lib/distutils/command/install.py",
+    "Lib/distutils/command/install_data.py",
+    "Lib/distutils/command/install_egg_info.py",
+    "Lib/distutils/command/install_headers.py",
+    "Lib/distutils/command/install_lib.py",
+    "Lib/distutils/command/install_scripts.py",
+    "Lib/distutils/command/register.py",
+    "Lib/distutils/command/sdist.py",
+    "Lib/distutils/command/upload.py",
+    "Lib/distutils/config.py",
+    "Lib/distutils/core.py",
+    "Lib/distutils/cygwinccompiler.py",
+    "Lib/distutils/debug.py",
+    "Lib/distutils/dep_util.py",
+    "Lib/distutils/dir_util.py",
+    "Lib/distutils/dist.py",
+    "Lib/distutils/errors.py",
+    "Lib/distutils/extension.py",
+    "Lib/distutils/fancy_getopt.py",
+    "Lib/distutils/file_util.py",
+    "Lib/distutils/filelist.py",
+    "Lib/distutils/log.py",
+    "Lib/distutils/msvc9compiler.py",
+    "Lib/distutils/msvccompiler.py",
+    "Lib/distutils/spawn.py",
+    "Lib/distutils/sysconfig.py",
+    "Lib/distutils/tests/Setup.sample",
+    "Lib/distutils/tests/__init__.py",
+    "Lib/distutils/tests/includetest.rst",
+    "Lib/distutils/tests/support.py",
+    "Lib/distutils/tests/test_archive_util.py",
+    "Lib/distutils/tests/test_bdist.py",
+    "Lib/distutils/tests/test_bdist_dumb.py",
+    "Lib/distutils/tests/test_bdist_msi.py",
+    "Lib/distutils/tests/test_bdist_rpm.py",
+    "Lib/distutils/tests/test_build.py",
+    "Lib/distutils/tests/test_build_clib.py",
+    "Lib/distutils/tests/test_build_ext.py",
+    "Lib/distutils/tests/test_build_py.py",
+    "Lib/distutils/tests/test_build_scripts.py",
+    "Lib/distutils/tests/test_check.py",
+    "Lib/distutils/tests/test_clean.py",
+    "Lib/distutils/tests/test_cmd.py",
+    "Lib/distutils/tests/test_config.py",
+    "Lib/distutils/tests/test_config_cmd.py",
+    "Lib/distutils/tests/test_core.py",
+    "Lib/distutils/tests/test_cygwinccompiler.py",
+    "Lib/distutils/tests/test_dep_util.py",
+    "Lib/distutils/tests/test_dir_util.py",
+    "Lib/distutils/tests/test_dist.py",
+    "Lib/distutils/tests/test_extension.py",
+    "Lib/distutils/tests/test_file_util.py",
+    "Lib/distutils/tests/test_filelist.py",
+    "Lib/distutils/tests/test_install.py",
+    "Lib/distutils/tests/test_install_data.py",
+    "Lib/distutils/tests/test_install_headers.py",
+    "Lib/distutils/tests/test_install_lib.py",
+    "Lib/distutils/tests/test_install_scripts.py",
+    "Lib/distutils/tests/test_log.py",
+    "Lib/distutils/tests/test_msvc9compiler.py",
+    "Lib/distutils/tests/test_msvccompiler.py",
+    "Lib/distutils/tests/test_register.py",
+    "Lib/distutils/tests/test_sdist.py",
+    "Lib/distutils/tests/test_spawn.py",
+    "Lib/distutils/tests/test_sysconfig.py",
+    "Lib/distutils/tests/test_text_file.py",
+    "Lib/distutils/tests/test_unixccompiler.py",
+    "Lib/distutils/tests/test_upload.py",
+    "Lib/distutils/tests/test_util.py",
+    "Lib/distutils/tests/test_version.py",
+    "Lib/distutils/tests/test_versionpredicate.py",
+    "Lib/distutils/text_file.py",
+    "Lib/distutils/unixccompiler.py",
+    "Lib/distutils/util.py",
+    "Lib/distutils/version.py",
+    "Lib/distutils/versionpredicate.py"
+  ],
+  "doctest": [
+    "Lib/doctest.py"
+  ],
+  "email": [
+    "Lib/email/__init__.py",
+    "Lib/email/_encoded_words.py",
+    "Lib/email/_header_value_parser.py",
+    "Lib/email/_parseaddr.py",
+    "Lib/email/_policybase.py",
+    "Lib/email/architecture.rst",
+    "Lib/email/base64mime.py",
+    "Lib/email/charset.py",
+    "Lib/email/contentmanager.py",
+    "Lib/email/encoders.py",
+    "Lib/email/errors.py",
+    "Lib/email/feedparser.py",
+    "Lib/email/generator.py",
+    "Lib/email/header.py",
+    "Lib/email/headerregistry.py",
+    "Lib/email/iterators.py",
+    "Lib/email/message.py",
+    "Lib/email/mime/__init__.py",
+    "Lib/email/mime/application.py",
+    "Lib/email/mime/audio.py",
+    "Lib/email/mime/base.py",
+    "Lib/email/mime/image.py",
+    "Lib/email/mime/message.py",
+    "Lib/email/mime/multipart.py",
+    "Lib/email/mime/nonmultipart.py",
+    "Lib/email/mime/text.py",
+    "Lib/email/parser.py",
+    "Lib/email/policy.py",
+    "Lib/email/quoprimime.py",
+    "Lib/email/utils.py"
+  ],
+  "encodings": [
+    "Lib/encodings/__init__.py",
+    "Lib/encodings/aliases.py",
+    "Lib/encodings/ascii.py",
+    "Lib/encodings/base64_codec.py",
+    "Lib/encodings/big5.py",
+    "Lib/encodings/big5hkscs.py",
+    "Lib/encodings/bz2_codec.py",
+    "Lib/encodings/charmap.py",
+    "Lib/encodings/cp037.py",
+    "Lib/encodings/cp1006.py",
+    "Lib/encodings/cp1026.py",
+    "Lib/encodings/cp1125.py",
+    "Lib/encodings/cp1140.py",
+    "Lib/encodings/cp1250.py",
+    "Lib/encodings/cp1251.py",
+    "Lib/encodings/cp1252.py",
+    "Lib/encodings/cp1253.py",
+    "Lib/encodings/cp1254.py",
+    "Lib/encodings/cp1255.py",
+    "Lib/encodings/cp1256.py",
+    "Lib/encodings/cp1257.py",
+    "Lib/encodings/cp1258.py",
+    "Lib/encodings/cp273.py",
+    "Lib/encodings/cp424.py",
+    "Lib/encodings/cp437.py",
+    "Lib/encodings/cp500.py",
+    "Lib/encodings/cp720.py",
+    "Lib/encodings/cp737.py",
+    "Lib/encodings/cp775.py",
+    "Lib/encodings/cp850.py",
+    "Lib/encodings/cp852.py",
+    "Lib/encodings/cp855.py",
+    "Lib/encodings/cp856.py",
+    "Lib/encodings/cp857.py",
+    "Lib/encodings/cp858.py",
+    "Lib/encodings/cp860.py",
+    "Lib/encodings/cp861.py",
+    "Lib/encodings/cp862.py",
+    "Lib/encodings/cp863.py",
+    "Lib/encodings/cp864.py",
+    "Lib/encodings/cp865.py",
+    "Lib/encodings/cp866.py",
+    "Lib/encodings/cp869.py",
+    "Lib/encodings/cp874.py",
+    "Lib/encodings/cp875.py",
+    "Lib/encodings/cp932.py",
+    "Lib/encodings/cp949.py",
+    "Lib/encodings/cp950.py",
+    "Lib/encodings/euc_jis_2004.py",
+    "Lib/encodings/euc_jisx0213.py",
+    "Lib/encodings/euc_jp.py",
+    "Lib/encodings/euc_kr.py",
+    "Lib/encodings/gb18030.py",
+    "Lib/encodings/gb2312.py",
+    "Lib/encodings/gbk.py",
+    "Lib/encodings/hex_codec.py",
+    "Lib/encodings/hp_roman8.py",
+    "Lib/encodings/hz.py",
+    "Lib/encodings/idna.py",
+    "Lib/encodings/iso2022_jp.py",
+    "Lib/encodings/iso2022_jp_1.py",
+    "Lib/encodings/iso2022_jp_2.py",
+    "Lib/encodings/iso2022_jp_2004.py",
+    "Lib/encodings/iso2022_jp_3.py",
+    "Lib/encodings/iso2022_jp_ext.py",
+    "Lib/encodings/iso2022_kr.py",
+    "Lib/encodings/iso8859_1.py",
+    "Lib/encodings/iso8859_10.py",
+    "Lib/encodings/iso8859_11.py",
+    "Lib/encodings/iso8859_13.py",
+    "Lib/encodings/iso8859_14.py",
+    "Lib/encodings/iso8859_15.py",
+    "Lib/encodings/iso8859_16.py",
+    "Lib/encodings/iso8859_2.py",
+    "Lib/encodings/iso8859_3.py",
+    "Lib/encodings/iso8859_4.py",
+    "Lib/encodings/iso8859_5.py",
+    "Lib/encodings/iso8859_6.py",
+    "Lib/encodings/iso8859_7.py",
+    "Lib/encodings/iso8859_8.py",
+    "Lib/encodings/iso8859_9.py",
+    "Lib/encodings/johab.py",
+    "Lib/encodings/koi8_r.py",
+    "Lib/encodings/koi8_t.py",
+    "Lib/encodings/koi8_u.py",
+    "Lib/encodings/kz1048.py",
+    "Lib/encodings/latin_1.py",
+    "Lib/encodings/mac_arabic.py",
+    "Lib/encodings/mac_croatian.py",
+    "Lib/encodings/mac_cyrillic.py",
+    "Lib/encodings/mac_farsi.py",
+    "Lib/encodings/mac_greek.py",
+    "Lib/encodings/mac_iceland.py",
+    "Lib/encodings/mac_latin2.py",
+    "Lib/encodings/mac_roman.py",
+    "Lib/encodings/mac_romanian.py",
+    "Lib/encodings/mac_turkish.py",
+    "Lib/encodings/mbcs.py",
+    "Lib/encodings/oem.py",
+    "Lib/encodings/palmos.py",
+    "Lib/encodings/ptcp154.py",
+    "Lib/encodings/punycode.py",
+    "Lib/encodings/quopri_codec.py",
+    "Lib/encodings/raw_unicode_escape.py",
+    "Lib/encodings/rot_13.py",
+    "Lib/encodings/shift_jis.py",
+    "Lib/encodings/shift_jis_2004.py",
+    "Lib/encodings/shift_jisx0213.py",
+    "Lib/encodings/tis_620.py",
+    "Lib/encodings/undefined.py",
+    "Lib/encodings/unicode_escape.py",
+    "Lib/encodings/utf_16.py",
+    "Lib/encodings/utf_16_be.py",
+    "Lib/encodings/utf_16_le.py",
+    "Lib/encodings/utf_32.py",
+    "Lib/encodings/utf_32_be.py",
+    "Lib/encodings/utf_32_le.py",
+    "Lib/encodings/utf_7.py",
+    "Lib/encodings/utf_8.py",
+    "Lib/encodings/utf_8_sig.py",
+    "Lib/encodings/uu_codec.py",
+    "Lib/encodings/zlib_codec.py"
+  ],
+  "ensurepip": [
+    "Lib/ensurepip/__init__.py",
+    "Lib/ensurepip/__main__.py",
+    "Lib/ensurepip/_bundled/__init__.py",
+    "Lib/ensurepip/_bundled/pip-21.0.1-py3-none-any.whl",
+    "Lib/ensurepip/_bundled/setuptools-52.0.0-py3-none-any.whl",
+    "Lib/ensurepip/_uninstall.py"
+  ],
+  "enum": [
+    "Lib/enum.py"
+  ],
+  "errno": [
+    "Modules/errnomodule.c"
+  ],
+  "faulthandler": [
+    "Modules/faulthandler.c"
+  ],
+  "fcntl": [
+    "Modules/fcntlmodule.c"
+  ],
+  "filecmp": [
+    "Lib/filecmp.py"
+  ],
+  "fileinput": [
+    "Lib/fileinput.py"
+  ],
+  "fnmatch": [
+    "Lib/fnmatch.py"
+  ],
+  "fractions": [
+    "Lib/fractions.py"
+  ],
+  "ftplib": [
+    "Lib/ftplib.py"
+  ],
+  "functools": [
+    "Lib/functools.py"
+  ],
+  "gc": [
+    "Modules/gcmodule.c"
+  ],
+  "genericpath": [
+    "Lib/genericpath.py"
+  ],
+  "getopt": [
+    "Lib/getopt.py"
+  ],
+  "getpass": [
+    "Lib/getpass.py"
+  ],
+  "gettext": [
+    "Lib/gettext.py"
+  ],
+  "glob": [
+    "Lib/glob.py"
+  ],
+  "graphlib": [
+    "Lib/graphlib.py"
+  ],
+  "grp": [
+    "Modules/grpmodule.c"
+  ],
+  "gzip": [
+    "Lib/gzip.py"
+  ],
+  "hashlib": [
+    "Lib/hashlib.py",
+    "Modules/hashlib.h"
+  ],
+  "heapq": [
+    "Lib/heapq.py"
+  ],
+  "hmac": [
+    "Lib/hmac.py"
+  ],
+  "html": [
+    "Lib/html/__init__.py",
+    "Lib/html/entities.py",
+    "Lib/html/parser.py"
+  ],
+  "http": [
+    "Lib/http/__init__.py",
+    "Lib/http/client.py",
+    "Lib/http/cookiejar.py",
+    "Lib/http/cookies.py",
+    "Lib/http/server.py"
+  ],
+  "idlelib": [
+    "Lib/idlelib/CREDITS.txt",
+    "Lib/idlelib/ChangeLog",
+    "Lib/idlelib/HISTORY.txt",
+    "Lib/idlelib/Icons/README.txt",
+    "Lib/idlelib/Icons/folder.gif",
+    "Lib/idlelib/Icons/idle.ico",
+    "Lib/idlelib/Icons/idle_16.gif",
+    "Lib/idlelib/Icons/idle_16.png",
+    "Lib/idlelib/Icons/idle_256.png",
+    "Lib/idlelib/Icons/idle_32.gif",
+    "Lib/idlelib/Icons/idle_32.png",
+    "Lib/idlelib/Icons/idle_48.gif",
+    "Lib/idlelib/Icons/idle_48.png",
+    "Lib/idlelib/Icons/minusnode.gif",
+    "Lib/idlelib/Icons/openfolder.gif",
+    "Lib/idlelib/Icons/plusnode.gif",
+    "Lib/idlelib/Icons/python.gif",
+    "Lib/idlelib/Icons/tk.gif",
+    "Lib/idlelib/NEWS.txt",
+    "Lib/idlelib/NEWS2x.txt",
+    "Lib/idlelib/README.txt",
+    "Lib/idlelib/TODO.txt",
+    "Lib/idlelib/__init__.py",
+    "Lib/idlelib/__main__.py",
+    "Lib/idlelib/autocomplete.py",
+    "Lib/idlelib/autocomplete_w.py",
+    "Lib/idlelib/autoexpand.py",
+    "Lib/idlelib/browser.py",
+    "Lib/idlelib/calltip.py",
+    "Lib/idlelib/calltip_w.py",
+    "Lib/idlelib/codecontext.py",
+    "Lib/idlelib/colorizer.py",
+    "Lib/idlelib/config-extensions.def",
+    "Lib/idlelib/config-highlight.def",
+    "Lib/idlelib/config-keys.def",
+    "Lib/idlelib/config-main.def",
+    "Lib/idlelib/config.py",
+    "Lib/idlelib/config_key.py",
+    "Lib/idlelib/configdialog.py",
+    "Lib/idlelib/debugger.py",
+    "Lib/idlelib/debugger_r.py",
+    "Lib/idlelib/debugobj.py",
+    "Lib/idlelib/debugobj_r.py",
+    "Lib/idlelib/delegator.py",
+    "Lib/idlelib/dynoption.py",
+    "Lib/idlelib/editor.py",
+    "Lib/idlelib/extend.txt",
+    "Lib/idlelib/filelist.py",
+    "Lib/idlelib/format.py",
+    "Lib/idlelib/grep.py",
+    "Lib/idlelib/help.html",
+    "Lib/idlelib/help.py",
+    "Lib/idlelib/help_about.py",
+    "Lib/idlelib/history.py",
+    "Lib/idlelib/hyperparser.py",
+    "Lib/idlelib/idle.bat",
+    "Lib/idlelib/idle.py",
+    "Lib/idlelib/idle.pyw",
+    "Lib/idlelib/idle_test/README.txt",
+    "Lib/idlelib/idle_test/__init__.py",
+    "Lib/idlelib/idle_test/htest.py",
+    "Lib/idlelib/idle_test/mock_idle.py",
+    "Lib/idlelib/idle_test/mock_tk.py",
+    "Lib/idlelib/idle_test/template.py",
+    "Lib/idlelib/idle_test/test_autocomplete.py",
+    "Lib/idlelib/idle_test/test_autocomplete_w.py",
+    "Lib/idlelib/idle_test/test_autoexpand.py",
+    "Lib/idlelib/idle_test/test_browser.py",
+    "Lib/idlelib/idle_test/test_calltip.py",
+    "Lib/idlelib/idle_test/test_calltip_w.py",
+    "Lib/idlelib/idle_test/test_codecontext.py",
+    "Lib/idlelib/idle_test/test_colorizer.py",
+    "Lib/idlelib/idle_test/test_config.py",
+    "Lib/idlelib/idle_test/test_config_key.py",
+    "Lib/idlelib/idle_test/test_configdialog.py",
+    "Lib/idlelib/idle_test/test_debugger.py",
+    "Lib/idlelib/idle_test/test_debugger_r.py",
+    "Lib/idlelib/idle_test/test_debugobj.py",
+    "Lib/idlelib/idle_test/test_debugobj_r.py",
+    "Lib/idlelib/idle_test/test_delegator.py",
+    "Lib/idlelib/idle_test/test_editmenu.py",
+    "Lib/idlelib/idle_test/test_editor.py",
+    "Lib/idlelib/idle_test/test_filelist.py",
+    "Lib/idlelib/idle_test/test_format.py",
+    "Lib/idlelib/idle_test/test_grep.py",
+    "Lib/idlelib/idle_test/test_help.py",
+    "Lib/idlelib/idle_test/test_help_about.py",
+    "Lib/idlelib/idle_test/test_history.py",
+    "Lib/idlelib/idle_test/test_hyperparser.py",
+    "Lib/idlelib/idle_test/test_iomenu.py",
+    "Lib/idlelib/idle_test/test_macosx.py",
+    "Lib/idlelib/idle_test/test_mainmenu.py",
+    "Lib/idlelib/idle_test/test_multicall.py",
+    "Lib/idlelib/idle_test/test_outwin.py",
+    "Lib/idlelib/idle_test/test_parenmatch.py",
+    "Lib/idlelib/idle_test/test_pathbrowser.py",
+    "Lib/idlelib/idle_test/test_percolator.py",
+    "Lib/idlelib/idle_test/test_pyparse.py",
+    "Lib/idlelib/idle_test/test_pyshell.py",
+    "Lib/idlelib/idle_test/test_query.py",
+    "Lib/idlelib/idle_test/test_redirector.py",
+    "Lib/idlelib/idle_test/test_replace.py",
+    "Lib/idlelib/idle_test/test_rpc.py",
+    "Lib/idlelib/idle_test/test_run.py",
+    "Lib/idlelib/idle_test/test_runscript.py",
+    "Lib/idlelib/idle_test/test_scrolledlist.py",
+    "Lib/idlelib/idle_test/test_search.py",
+    "Lib/idlelib/idle_test/test_searchbase.py",
+    "Lib/idlelib/idle_test/test_searchengine.py",
+    "Lib/idlelib/idle_test/test_sidebar.py",
+    "Lib/idlelib/idle_test/test_squeezer.py",
+    "Lib/idlelib/idle_test/test_stackviewer.py",
+    "Lib/idlelib/idle_test/test_statusbar.py",
+    "Lib/idlelib/idle_test/test_text.py",
+    "Lib/idlelib/idle_test/test_textview.py",
+    "Lib/idlelib/idle_test/test_tooltip.py",
+    "Lib/idlelib/idle_test/test_tree.py",
+    "Lib/idlelib/idle_test/test_undo.py",
+    "Lib/idlelib/idle_test/test_warning.py",
+    "Lib/idlelib/idle_test/test_window.py",
+    "Lib/idlelib/idle_test/test_zoomheight.py",
+    "Lib/idlelib/idle_test/test_zzdummy.py",
+    "Lib/idlelib/iomenu.py",
+    "Lib/idlelib/macosx.py",
+    "Lib/idlelib/mainmenu.py",
+    "Lib/idlelib/multicall.py",
+    "Lib/idlelib/outwin.py",
+    "Lib/idlelib/parenmatch.py",
+    "Lib/idlelib/pathbrowser.py",
+    "Lib/idlelib/percolator.py",
+    "Lib/idlelib/pyparse.py",
+    "Lib/idlelib/pyshell.py",
+    "Lib/idlelib/query.py",
+    "Lib/idlelib/redirector.py",
+    "Lib/idlelib/replace.py",
+    "Lib/idlelib/rpc.py",
+    "Lib/idlelib/run.py",
+    "Lib/idlelib/runscript.py",
+    "Lib/idlelib/scrolledlist.py",
+    "Lib/idlelib/search.py",
+    "Lib/idlelib/searchbase.py",
+    "Lib/idlelib/searchengine.py",
+    "Lib/idlelib/sidebar.py",
+    "Lib/idlelib/squeezer.py",
+    "Lib/idlelib/stackviewer.py",
+    "Lib/idlelib/statusbar.py",
+    "Lib/idlelib/textview.py",
+    "Lib/idlelib/tooltip.py",
+    "Lib/idlelib/tree.py",
+    "Lib/idlelib/undo.py",
+    "Lib/idlelib/window.py",
+    "Lib/idlelib/zoomheight.py",
+    "Lib/idlelib/zzdummy.py"
+  ],
+  "imaplib": [
+    "Lib/imaplib.py"
+  ],
+  "imghdr": [
+    "Lib/imghdr.py"
+  ],
+  "imp": [
+    "Lib/imp.py"
+  ],
+  "importlib": [
+    "Lib/importlib/__init__.py",
+    "Lib/importlib/_abc.py",
+    "Lib/importlib/_bootstrap.py",
+    "Lib/importlib/_bootstrap_external.py",
+    "Lib/importlib/_common.py",
+    "Lib/importlib/abc.py",
+    "Lib/importlib/machinery.py",
+    "Lib/importlib/metadata.py",
+    "Lib/importlib/readers.py",
+    "Lib/importlib/resources.py",
+    "Lib/importlib/util.py"
+  ],
+  "inspect": [
+    "Lib/inspect.py"
+  ],
+  "io": [
+    "Lib/io.py"
+  ],
+  "ipaddress": [
+    "Lib/ipaddress.py"
+  ],
+  "itertools": [
+    "Modules/itertoolsmodule.c"
+  ],
+  "json": [
+    "Lib/json/__init__.py",
+    "Lib/json/decoder.py",
+    "Lib/json/encoder.py",
+    "Lib/json/scanner.py",
+    "Lib/json/tool.py"
+  ],
+  "keyword": [
+    "Lib/keyword.py"
+  ],
+  "lib2to3": [
+    "Lib/lib2to3/Grammar.txt",
+    "Lib/lib2to3/PatternGrammar.txt",
+    "Lib/lib2to3/__init__.py",
+    "Lib/lib2to3/__main__.py",
+    "Lib/lib2to3/btm_matcher.py",
+    "Lib/lib2to3/btm_utils.py",
+    "Lib/lib2to3/fixer_base.py",
+    "Lib/lib2to3/fixer_util.py",
+    "Lib/lib2to3/fixes/__init__.py",
+    "Lib/lib2to3/fixes/fix_apply.py",
+    "Lib/lib2to3/fixes/fix_asserts.py",
+    "Lib/lib2to3/fixes/fix_basestring.py",
+    "Lib/lib2to3/fixes/fix_buffer.py",
+    "Lib/lib2to3/fixes/fix_dict.py",
+    "Lib/lib2to3/fixes/fix_except.py",
+    "Lib/lib2to3/fixes/fix_exec.py",
+    "Lib/lib2to3/fixes/fix_execfile.py",
+    "Lib/lib2to3/fixes/fix_exitfunc.py",
+    "Lib/lib2to3/fixes/fix_filter.py",
+    "Lib/lib2to3/fixes/fix_funcattrs.py",
+    "Lib/lib2to3/fixes/fix_future.py",
+    "Lib/lib2to3/fixes/fix_getcwdu.py",
+    "Lib/lib2to3/fixes/fix_has_key.py",
+    "Lib/lib2to3/fixes/fix_idioms.py",
+    "Lib/lib2to3/fixes/fix_import.py",
+    "Lib/lib2to3/fixes/fix_imports.py",
+    "Lib/lib2to3/fixes/fix_imports2.py",
+    "Lib/lib2to3/fixes/fix_input.py",
+    "Lib/lib2to3/fixes/fix_intern.py",
+    "Lib/lib2to3/fixes/fix_isinstance.py",
+    "Lib/lib2to3/fixes/fix_itertools.py",
+    "Lib/lib2to3/fixes/fix_itertools_imports.py",
+    "Lib/lib2to3/fixes/fix_long.py",
+    "Lib/lib2to3/fixes/fix_map.py",
+    "Lib/lib2to3/fixes/fix_metaclass.py",
+    "Lib/lib2to3/fixes/fix_methodattrs.py",
+    "Lib/lib2to3/fixes/fix_ne.py",
+    "Lib/lib2to3/fixes/fix_next.py",
+    "Lib/lib2to3/fixes/fix_nonzero.py",
+    "Lib/lib2to3/fixes/fix_numliterals.py",
+    "Lib/lib2to3/fixes/fix_operator.py",
+    "Lib/lib2to3/fixes/fix_paren.py",
+    "Lib/lib2to3/fixes/fix_print.py",
+    "Lib/lib2to3/fixes/fix_raise.py",
+    "Lib/lib2to3/fixes/fix_raw_input.py",
+    "Lib/lib2to3/fixes/fix_reduce.py",
+    "Lib/lib2to3/fixes/fix_reload.py",
+    "Lib/lib2to3/fixes/fix_renames.py",
+    "Lib/lib2to3/fixes/fix_repr.py",
+    "Lib/lib2to3/fixes/fix_set_literal.py",
+    "Lib/lib2to3/fixes/fix_standarderror.py",
+    "Lib/lib2to3/fixes/fix_sys_exc.py",
+    "Lib/lib2to3/fixes/fix_throw.py",
+    "Lib/lib2to3/fixes/fix_tuple_params.py",
+    "Lib/lib2to3/fixes/fix_types.py",
+    "Lib/lib2to3/fixes/fix_unicode.py",
+    "Lib/lib2to3/fixes/fix_urllib.py",
+    "Lib/lib2to3/fixes/fix_ws_comma.py",
+    "Lib/lib2to3/fixes/fix_xrange.py",
+    "Lib/lib2to3/fixes/fix_xreadlines.py",
+    "Lib/lib2to3/fixes/fix_zip.py",
+    "Lib/lib2to3/main.py",
+    "Lib/lib2to3/patcomp.py",
+    "Lib/lib2to3/pgen2/__init__.py",
+    "Lib/lib2to3/pgen2/conv.py",
+    "Lib/lib2to3/pgen2/driver.py",
+    "Lib/lib2to3/pgen2/grammar.py",
+    "Lib/lib2to3/pgen2/literals.py",
+    "Lib/lib2to3/pgen2/parse.py",
+    "Lib/lib2to3/pgen2/pgen.py",
+    "Lib/lib2to3/pgen2/token.py",
+    "Lib/lib2to3/pgen2/tokenize.py",
+    "Lib/lib2to3/pygram.py",
+    "Lib/lib2to3/pytree.py",
+    "Lib/lib2to3/refactor.py",
+    "Lib/lib2to3/tests/__init__.py",
+    "Lib/lib2to3/tests/__main__.py",
+    "Lib/lib2to3/tests/data/README",
+    "Lib/lib2to3/tests/data/bom.py",
+    "Lib/lib2to3/tests/data/crlf.py",
+    "Lib/lib2to3/tests/data/different_encoding.py",
+    "Lib/lib2to3/tests/data/false_encoding.py",
+    "Lib/lib2to3/tests/data/fixers/bad_order.py",
+    "Lib/lib2to3/tests/data/fixers/myfixes/__init__.py",
+    "Lib/lib2to3/tests/data/fixers/myfixes/fix_explicit.py",
+    "Lib/lib2to3/tests/data/fixers/myfixes/fix_first.py",
+    "Lib/lib2to3/tests/data/fixers/myfixes/fix_last.py",
+    "Lib/lib2to3/tests/data/fixers/myfixes/fix_parrot.py",
+    "Lib/lib2to3/tests/data/fixers/myfixes/fix_preorder.py",
+    "Lib/lib2to3/tests/data/fixers/no_fixer_cls.py",
+    "Lib/lib2to3/tests/data/fixers/parrot_example.py",
+    "Lib/lib2to3/tests/data/infinite_recursion.py",
+    "Lib/lib2to3/tests/data/py2_test_grammar.py",
+    "Lib/lib2to3/tests/data/py3_test_grammar.py",
+    "Lib/lib2to3/tests/pytree_idempotency.py",
+    "Lib/lib2to3/tests/support.py",
+    "Lib/lib2to3/tests/test_all_fixers.py",
+    "Lib/lib2to3/tests/test_fixers.py",
+    "Lib/lib2to3/tests/test_main.py",
+    "Lib/lib2to3/tests/test_parser.py",
+    "Lib/lib2to3/tests/test_pytree.py",
+    "Lib/lib2to3/tests/test_refactor.py",
+    "Lib/lib2to3/tests/test_util.py"
+  ],
+  "linecache": [
+    "Lib/linecache.py"
+  ],
+  "locale": [
+    "Lib/locale.py"
+  ],
+  "logging": [
+    "Lib/logging/__init__.py",
+    "Lib/logging/config.py",
+    "Lib/logging/handlers.py"
+  ],
+  "lzma": [
+    "Lib/lzma.py"
+  ],
+  "mailbox": [
+    "Lib/mailbox.py"
+  ],
+  "mailcap": [
+    "Lib/mailcap.py"
+  ],
+  "marshal": [],
+  "math": [
+    "Modules/_math.c",
+    "Modules/_math.h",
+    "Modules/mathmodule.c"
+  ],
+  "mimetypes": [
+    "Lib/mimetypes.py"
+  ],
+  "mmap": [
+    "Modules/mmapmodule.c"
+  ],
+  "modulefinder": [
+    "Lib/modulefinder.py"
+  ],
+  "msilib": [
+    "Lib/msilib/__init__.py",
+    "Lib/msilib/schema.py",
+    "Lib/msilib/sequence.py",
+    "Lib/msilib/text.py"
+  ],
+  "msvcrt": [],
+  "multiprocessing": [
+    "Lib/multiprocessing/__init__.py",
+    "Lib/multiprocessing/connection.py",
+    "Lib/multiprocessing/context.py",
+    "Lib/multiprocessing/dummy/__init__.py",
+    "Lib/multiprocessing/dummy/connection.py",
+    "Lib/multiprocessing/forkserver.py",
+    "Lib/multiprocessing/heap.py",
+    "Lib/multiprocessing/managers.py",
+    "Lib/multiprocessing/pool.py",
+    "Lib/multiprocessing/popen_fork.py",
+    "Lib/multiprocessing/popen_forkserver.py",
+    "Lib/multiprocessing/popen_spawn_posix.py",
+    "Lib/multiprocessing/popen_spawn_win32.py",
+    "Lib/multiprocessing/process.py",
+    "Lib/multiprocessing/queues.py",
+    "Lib/multiprocessing/reduction.py",
+    "Lib/multiprocessing/resource_sharer.py",
+    "Lib/multiprocessing/resource_tracker.py",
+    "Lib/multiprocessing/shared_memory.py",
+    "Lib/multiprocessing/sharedctypes.py",
+    "Lib/multiprocessing/spawn.py",
+    "Lib/multiprocessing/synchronize.py",
+    "Lib/multiprocessing/util.py"
+  ],
+  "netrc": [
+    "Lib/netrc.py"
+  ],
+  "nis": [
+    "Modules/nismodule.c"
+  ],
+  "nntplib": [
+    "Lib/nntplib.py"
+  ],
+  "nt": [
+    "Modules/winreparse.h"
+  ],
+  "ntpath": [
+    "Lib/ntpath.py"
+  ],
+  "nturl2path": [
+    "Lib/nturl2path.py"
+  ],
+  "numbers": [
+    "Lib/numbers.py"
+  ],
+  "opcode": [
+    "Lib/opcode.py"
+  ],
+  "operator": [
+    "Lib/operator.py"
+  ],
+  "optparse": [
+    "Lib/optparse.py"
+  ],
+  "os": [
+    "Lib/os.py"
+  ],
+  "ossaudiodev": [
+    "Modules/ossaudiodev.c"
+  ],
+  "pathlib": [
+    "Lib/pathlib.py"
+  ],
+  "pdb": [
+    "Lib/pdb.py"
+  ],
+  "pickle": [
+    "Lib/pickle.py"
+  ],
+  "pickletools": [
+    "Lib/pickletools.py"
+  ],
+  "pipes": [
+    "Lib/pipes.py"
+  ],
+  "pkgutil": [
+    "Lib/pkgutil.py"
+  ],
+  "platform": [
+    "Lib/platform.py"
+  ],
+  "plistlib": [
+    "Lib/plistlib.py"
+  ],
+  "poplib": [
+    "Lib/poplib.py"
+  ],
+  "posix": [
+    "Modules/posixmodule.c",
+    "Modules/posixmodule.h"
+  ],
+  "posixpath": [
+    "Lib/posixpath.py"
+  ],
+  "pprint": [
+    "Lib/pprint.py"
+  ],
+  "profile": [
+    "Lib/profile.py"
+  ],
+  "pstats": [
+    "Lib/pstats.py"
+  ],
+  "pty": [
+    "Lib/pty.py"
+  ],
+  "pwd": [
+    "Modules/pwdmodule.c"
+  ],
+  "py_compile": [
+    "Lib/py_compile.py"
+  ],
+  "pyclbr": [
+    "Lib/pyclbr.py"
+  ],
+  "pydoc": [
+    "Lib/pydoc.py"
+  ],
+  "pydoc_data": [
+    "Lib/pydoc_data/__init__.py",
+    "Lib/pydoc_data/_pydoc.css",
+    "Lib/pydoc_data/topics.py"
+  ],
+  "pyexpat": [
+    "Modules/pyexpat.c"
+  ],
+  "queue": [
+    "Lib/queue.py"
+  ],
+  "quopri": [
+    "Lib/quopri.py"
+  ],
+  "random": [
+    "Lib/random.py"
+  ],
+  "re": [
+    "Lib/re.py"
+  ],
+  "readline": [
+    "Modules/readline.c"
+  ],
+  "reprlib": [
+    "Lib/reprlib.py"
+  ],
+  "resource": [
+    "Modules/resource.c"
+  ],
+  "rlcompleter": [
+    "Lib/rlcompleter.py"
+  ],
+  "runpy": [
+    "Lib/runpy.py"
+  ],
+  "sched": [
+    "Lib/sched.py"
+  ],
+  "secrets": [
+    "Lib/secrets.py"
+  ],
+  "select": [
+    "Modules/selectmodule.c"
+  ],
+  "selectors": [
+    "Lib/selectors.py"
+  ],
+  "shelve": [
+    "Lib/shelve.py"
+  ],
+  "shlex": [
+    "Lib/shlex.py"
+  ],
+  "shutil": [
+    "Lib/shutil.py"
+  ],
+  "signal": [
+    "Lib/signal.py",
+    "Modules/signalmodule.c"
+  ],
+  "site": [
+    "Lib/site.py"
+  ],
+  "smtpd": [
+    "Lib/smtpd.py"
+  ],
+  "smtplib": [
+    "Lib/smtplib.py"
+  ],
+  "sndhdr": [
+    "Lib/sndhdr.py"
+  ],
+  "socket": [
+    "Lib/socket.py",
+    "Modules/addrinfo.h",
+    "Modules/getaddrinfo.c",
+    "Modules/getnameinfo.c",
+    "Modules/socketmodule.c",
+    "Modules/socketmodule.h"
+  ],
+  "socketserver": [
+    "Lib/socketserver.py"
+  ],
+  "spwd": [
+    "Modules/spwdmodule.c"
+  ],
+  "sqlite3": [
+    "Lib/sqlite3/__init__.py",
+    "Lib/sqlite3/dbapi2.py",
+    "Lib/sqlite3/dump.py",
+    "Lib/sqlite3/test/__init__.py",
+    "Lib/sqlite3/test/backup.py",
+    "Lib/sqlite3/test/dbapi.py",
+    "Lib/sqlite3/test/dump.py",
+    "Lib/sqlite3/test/factory.py",
+    "Lib/sqlite3/test/hooks.py",
+    "Lib/sqlite3/test/regression.py",
+    "Lib/sqlite3/test/transactions.py",
+    "Lib/sqlite3/test/types.py",
+    "Lib/sqlite3/test/userfunctions.py"
+  ],
+  "sre_compile": [
+    "Lib/sre_compile.py"
+  ],
+  "sre_constants": [
+    "Lib/sre_constants.py",
+    "Modules/sre_constants.h"
+  ],
+  "sre_parse": [
+    "Lib/sre_parse.py"
+  ],
+  "ssl": [
+    "Lib/ssl.py"
+  ],
+  "stat": [
+    "Lib/stat.py"
+  ],
+  "statistics": [
+    "Lib/statistics.py"
+  ],
+  "string": [
+    "Lib/string.py"
+  ],
+  "stringprep": [
+    "Lib/stringprep.py"
+  ],
+  "struct": [
+    "Lib/struct.py"
+  ],
+  "subprocess": [
+    "Lib/subprocess.py"
+  ],
+  "sunau": [
+    "Lib/sunau.py"
+  ],
+  "symtable": [
+    "Lib/symtable.py",
+    "Modules/symtablemodule.c"
+  ],
+  "sys": [],
+  "sysconfig": [
+    "Lib/sysconfig.py"
+  ],
+  "syslog": [
+    "Modules/syslogmodule.c"
+  ],
+  "tabnanny": [
+    "Lib/tabnanny.py"
+  ],
+  "tarfile": [
+    "Lib/tarfile.py"
+  ],
+  "telnetlib": [
+    "Lib/telnetlib.py"
+  ],
+  "tempfile": [
+    "Lib/tempfile.py"
+  ],
+  "termios": [
+    "Modules/termios.c"
+  ],
+  "textwrap": [
+    "Lib/textwrap.py"
+  ],
+  "this": [
+    "Lib/this.py"
+  ],
+  "threading": [
+    "Lib/threading.py"
+  ],
+  "time": [
+    "Modules/timemodule.c"
+  ],
+  "timeit": [
+    "Lib/timeit.py"
+  ],
+  "tkinter": [
+    "Lib/tkinter/__init__.py",
+    "Lib/tkinter/__main__.py",
+    "Lib/tkinter/colorchooser.py",
+    "Lib/tkinter/commondialog.py",
+    "Lib/tkinter/constants.py",
+    "Lib/tkinter/dialog.py",
+    "Lib/tkinter/dnd.py",
+    "Lib/tkinter/filedialog.py",
+    "Lib/tkinter/font.py",
+    "Lib/tkinter/messagebox.py",
+    "Lib/tkinter/scrolledtext.py",
+    "Lib/tkinter/simpledialog.py",
+    "Lib/tkinter/test/README",
+    "Lib/tkinter/test/__init__.py",
+    "Lib/tkinter/test/runtktests.py",
+    "Lib/tkinter/test/support.py",
+    "Lib/tkinter/test/test_tkinter/__init__.py",
+    "Lib/tkinter/test/test_tkinter/test_colorchooser.py",
+    "Lib/tkinter/test/test_tkinter/test_font.py",
+    "Lib/tkinter/test/test_tkinter/test_geometry_managers.py",
+    "Lib/tkinter/test/test_tkinter/test_images.py",
+    "Lib/tkinter/test/test_tkinter/test_loadtk.py",
+    "Lib/tkinter/test/test_tkinter/test_messagebox.py",
+    "Lib/tkinter/test/test_tkinter/test_misc.py",
+    "Lib/tkinter/test/test_tkinter/test_simpledialog.py",
+    "Lib/tkinter/test/test_tkinter/test_text.py",
+    "Lib/tkinter/test/test_tkinter/test_variables.py",
+    "Lib/tkinter/test/test_tkinter/test_widgets.py",
+    "Lib/tkinter/test/test_ttk/__init__.py",
+    "Lib/tkinter/test/test_ttk/test_extensions.py",
+    "Lib/tkinter/test/test_ttk/test_functions.py",
+    "Lib/tkinter/test/test_ttk/test_style.py",
+    "Lib/tkinter/test/test_ttk/test_widgets.py",
+    "Lib/tkinter/test/widget_tests.py",
+    "Lib/tkinter/tix.py",
+    "Lib/tkinter/ttk.py",
+    "Modules/tkinter.h"
+  ],
+  "token": [
+    "Lib/token.py"
+  ],
+  "tokenize": [
+    "Lib/tokenize.py"
+  ],
+  "trace": [
+    "Lib/trace.py"
+  ],
+  "traceback": [
+    "Lib/traceback.py"
+  ],
+  "tracemalloc": [
+    "Lib/tracemalloc.py"
+  ],
+  "tty": [
+    "Lib/tty.py"
+  ],
+  "turtle": [
+    "Lib/turtle.py"
+  ],
+  "turtledemo": [
+    "Lib/turtledemo/__init__.py",
+    "Lib/turtledemo/__main__.py",
+    "Lib/turtledemo/bytedesign.py",
+    "Lib/turtledemo/chaos.py",
+    "Lib/turtledemo/clock.py",
+    "Lib/turtledemo/colormixer.py",
+    "Lib/turtledemo/forest.py",
+    "Lib/turtledemo/fractalcurves.py",
+    "Lib/turtledemo/lindenmayer.py",
+    "Lib/turtledemo/minimal_hanoi.py",
+    "Lib/turtledemo/nim.py",
+    "Lib/turtledemo/paint.py",
+    "Lib/turtledemo/peace.py",
+    "Lib/turtledemo/penrose.py",
+    "Lib/turtledemo/planet_and_moon.py",
+    "Lib/turtledemo/rosette.py",
+    "Lib/turtledemo/round_dance.py",
+    "Lib/turtledemo/sorting_animate.py",
+    "Lib/turtledemo/tree.py",
+    "Lib/turtledemo/turtle.cfg",
+    "Lib/turtledemo/two_canvases.py",
+    "Lib/turtledemo/yinyang.py"
+  ],
+  "types": [
+    "Lib/types.py"
+  ],
+  "typing": [
+    "Lib/typing.py"
+  ],
+  "unicodedata": [
+    "Modules/unicodedata.c",
+    "Modules/unicodedata_db.h",
+    "Modules/unicodename_db.h"
+  ],
+  "unittest": [
+    "Lib/unittest/__init__.py",
+    "Lib/unittest/__main__.py",
+    "Lib/unittest/_log.py",
+    "Lib/unittest/async_case.py",
+    "Lib/unittest/case.py",
+    "Lib/unittest/loader.py",
+    "Lib/unittest/main.py",
+    "Lib/unittest/mock.py",
+    "Lib/unittest/result.py",
+    "Lib/unittest/runner.py",
+    "Lib/unittest/signals.py",
+    "Lib/unittest/suite.py",
+    "Lib/unittest/test/__init__.py",
+    "Lib/unittest/test/__main__.py",
+    "Lib/unittest/test/_test_warnings.py",
+    "Lib/unittest/test/dummy.py",
+    "Lib/unittest/test/support.py",
+    "Lib/unittest/test/test_assertions.py",
+    "Lib/unittest/test/test_async_case.py",
+    "Lib/unittest/test/test_break.py",
+    "Lib/unittest/test/test_case.py",
+    "Lib/unittest/test/test_discovery.py",
+    "Lib/unittest/test/test_functiontestcase.py",
+    "Lib/unittest/test/test_loader.py",
+    "Lib/unittest/test/test_program.py",
+    "Lib/unittest/test/test_result.py",
+    "Lib/unittest/test/test_runner.py",
+    "Lib/unittest/test/test_setups.py",
+    "Lib/unittest/test/test_skipping.py",
+    "Lib/unittest/test/test_suite.py",
+    "Lib/unittest/test/testmock/__init__.py",
+    "Lib/unittest/test/testmock/__main__.py",
+    "Lib/unittest/test/testmock/support.py",
+    "Lib/unittest/test/testmock/testasync.py",
+    "Lib/unittest/test/testmock/testcallable.py",
+    "Lib/unittest/test/testmock/testhelpers.py",
+    "Lib/unittest/test/testmock/testmagicmethods.py",
+    "Lib/unittest/test/testmock/testmock.py",
+    "Lib/unittest/test/testmock/testpatch.py",
+    "Lib/unittest/test/testmock/testsealable.py",
+    "Lib/unittest/test/testmock/testsentinel.py",
+    "Lib/unittest/test/testmock/testwith.py",
+    "Lib/unittest/util.py"
+  ],
+  "urllib": [
+    "Lib/urllib/__init__.py",
+    "Lib/urllib/error.py",
+    "Lib/urllib/parse.py",
+    "Lib/urllib/request.py",
+    "Lib/urllib/response.py",
+    "Lib/urllib/robotparser.py",
+    "Modules/_scproxy.c"
+  ],
+  "uu": [
+    "Lib/uu.py"
+  ],
+  "uuid": [
+    "Lib/uuid.py"
+  ],
+  "venv": [
+    "Lib/venv/__init__.py",
+    "Lib/venv/__main__.py",
+    "Lib/venv/scripts/common/Activate.ps1",
+    "Lib/venv/scripts/common/activate",
+    "Lib/venv/scripts/nt/activate.bat",
+    "Lib/venv/scripts/nt/deactivate.bat",
+    "Lib/venv/scripts/posix/activate.csh",
+    "Lib/venv/scripts/posix/activate.fish"
+  ],
+  "warnings": [
+    "Lib/warnings.py"
+  ],
+  "wave": [
+    "Lib/wave.py"
+  ],
+  "weakref": [
+    "Lib/weakref.py"
+  ],
+  "webbrowser": [
+    "Lib/webbrowser.py"
+  ],
+  "winreg": [],
+  "winsound": [],
+  "wsgiref": [
+    "Lib/wsgiref/__init__.py",
+    "Lib/wsgiref/handlers.py",
+    "Lib/wsgiref/headers.py",
+    "Lib/wsgiref/simple_server.py",
+    "Lib/wsgiref/util.py",
+    "Lib/wsgiref/validate.py"
+  ],
+  "xdrlib": [
+    "Lib/xdrlib.py"
+  ],
+  "xml": [
+    "Lib/xml/__init__.py",
+    "Lib/xml/dom/NodeFilter.py",
+    "Lib/xml/dom/__init__.py",
+    "Lib/xml/dom/domreg.py",
+    "Lib/xml/dom/expatbuilder.py",
+    "Lib/xml/dom/minicompat.py",
+    "Lib/xml/dom/minidom.py",
+    "Lib/xml/dom/pulldom.py",
+    "Lib/xml/dom/xmlbuilder.py",
+    "Lib/xml/etree/ElementInclude.py",
+    "Lib/xml/etree/ElementPath.py",
+    "Lib/xml/etree/ElementTree.py",
+    "Lib/xml/etree/__init__.py",
+    "Lib/xml/etree/cElementTree.py",
+    "Lib/xml/parsers/__init__.py",
+    "Lib/xml/parsers/expat.py",
+    "Lib/xml/sax/__init__.py",
+    "Lib/xml/sax/_exceptions.py",
+    "Lib/xml/sax/expatreader.py",
+    "Lib/xml/sax/handler.py",
+    "Lib/xml/sax/saxutils.py",
+    "Lib/xml/sax/xmlreader.py"
+  ],
+  "xmlrpc": [
+    "Lib/xmlrpc/__init__.py",
+    "Lib/xmlrpc/client.py",
+    "Lib/xmlrpc/server.py"
+  ],
+  "zipapp": [
+    "Lib/zipapp.py"
+  ],
+  "zipfile": [
+    "Lib/zipfile.py"
+  ],
+  "zipimport": [
+    "Lib/zipimport.py"
+  ],
+  "zlib": [
+    "Modules/zlibmodule.c"
+  ],
+  "zoneinfo": [
+    "Lib/zoneinfo/__init__.py",
+    "Lib/zoneinfo/_common.py",
+    "Lib/zoneinfo/_tzpath.py",
+    "Lib/zoneinfo/_zoneinfo.py"
+  ]
+}
