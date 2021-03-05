@@ -17,11 +17,13 @@ of their equivalent public API, they not listed as a dependent
 Data is verified via `private_modules.py`.
 
 ## Map file to module
-Ignores Argument Clinic files, but includes header files.
+Ignores Argument Clinic files and tests, but includes header files.
 
-XXX
+`file_map.json` maps module name to relative file paths in a git clone.
 
 ## Module details
+
+XXX
 
 - Release and date the module was introduced (inferred by the firt date of a
   `X.Y.0` release that comes after the earliest commit of any file for a module)
