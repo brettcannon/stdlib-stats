@@ -29,5 +29,6 @@ XXX
 - Number of open PRs (based on files edited by PRs targeting `master`)
 - Number of commits (based on total commits for all files that make up the module)
 - Usage by public projects/repos count
+- Category according to https://docs.python.org/3/library/
 
 XXX https://en.wikipedia.org/wiki/History_of_Python#Table_of_versions
