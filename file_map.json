@@ -10,14 +10,44 @@
     "Modules/ld_so_aix.in",
     "Modules/makexp_aix"
   ],
-  "_ast": [],
+  "_ast": [
+    "Python/Python-ast.c"
+  ],
   "_asyncio": [
     "Modules/_asynciomodule.c"
   ],
   "_bisect": [
     "Modules/_bisectmodule.c"
   ],
-  "_blake2": [],
+  "_blake2": [
+    "Modules/_blake2/blake2b2s.py",
+    "Modules/_blake2/blake2b_impl.c",
+    "Modules/_blake2/blake2module.c",
+    "Modules/_blake2/blake2ns.h",
+    "Modules/_blake2/blake2s_impl.c",
+    "Modules/_blake2/impl/blake2-config.h",
+    "Modules/_blake2/impl/blake2-dispatch.c",
+    "Modules/_blake2/impl/blake2-impl.h",
+    "Modules/_blake2/impl/blake2-kat.h",
+    "Modules/_blake2/impl/blake2.h",
+    "Modules/_blake2/impl/blake2b-load-sse2.h",
+    "Modules/_blake2/impl/blake2b-load-sse41.h",
+    "Modules/_blake2/impl/blake2b-ref.c",
+    "Modules/_blake2/impl/blake2b-round.h",
+    "Modules/_blake2/impl/blake2b-test.c",
+    "Modules/_blake2/impl/blake2b.c",
+    "Modules/_blake2/impl/blake2bp-test.c",
+    "Modules/_blake2/impl/blake2bp.c",
+    "Modules/_blake2/impl/blake2s-load-sse2.h",
+    "Modules/_blake2/impl/blake2s-load-sse41.h",
+    "Modules/_blake2/impl/blake2s-load-xop.h",
+    "Modules/_blake2/impl/blake2s-ref.c",
+    "Modules/_blake2/impl/blake2s-round.h",
+    "Modules/_blake2/impl/blake2s-test.c",
+    "Modules/_blake2/impl/blake2s.c",
+    "Modules/_blake2/impl/blake2sp-test.c",
+    "Modules/_blake2/impl/blake2sp.c"
+  ],
   "_bootsubprocess": [
     "Lib/_bootsubprocess.py"
   ],
@@ -27,12 +57,24 @@
   "_codecs": [
     "Modules/_codecsmodule.c"
   ],
-  "_codecs_cn": [],
-  "_codecs_hk": [],
-  "_codecs_iso2022": [],
-  "_codecs_jp": [],
-  "_codecs_kr": [],
-  "_codecs_tw": [],
+  "_codecs_cn": [
+    "Modules/cjkcodecs/_codecs_cn.c"
+  ],
+  "_codecs_hk": [
+    "Modules/cjkcodecs/_codecs_hk.c"
+  ],
+  "_codecs_iso2022": [
+    "Modules/cjkcodecs/_codecs_iso2022.c"
+  ],
+  "_codecs_jp": [
+    "Modules/cjkcodecs/_codecs_jp.c"
+  ],
+  "_codecs_kr": [
+    "Modules/cjkcodecs/_codecs_kr.c"
+  ],
+  "_codecs_tw": [
+    "Modules/cjkcodecs/_codecs_tw.c"
+  ],
   "_collections": [
     "Modules/_collectionsmodule.c"
   ],
@@ -54,7 +96,43 @@
   "_csv": [
     "Modules/_csv.c"
   ],
-  "_ctypes": [],
+  "_ctypes": [
+    "Modules/_ctypes/_ctypes.c",
+    "Modules/_ctypes/_ctypes_test.c",
+    "Modules/_ctypes/_ctypes_test.h",
+    "Modules/_ctypes/callbacks.c",
+    "Modules/_ctypes/callproc.c",
+    "Modules/_ctypes/cfield.c",
+    "Modules/_ctypes/ctypes.h",
+    "Modules/_ctypes/ctypes_dlfcn.h",
+    "Modules/_ctypes/darwin/LICENSE",
+    "Modules/_ctypes/darwin/README",
+    "Modules/_ctypes/darwin/README.ctypes",
+    "Modules/_ctypes/darwin/dlfcn.h",
+    "Modules/_ctypes/darwin/dlfcn_simple.c",
+    "Modules/_ctypes/libffi_osx/LICENSE",
+    "Modules/_ctypes/libffi_osx/README",
+    "Modules/_ctypes/libffi_osx/README.pyobjc",
+    "Modules/_ctypes/libffi_osx/ffi.c",
+    "Modules/_ctypes/libffi_osx/include/ffi.h",
+    "Modules/_ctypes/libffi_osx/include/ffi_common.h",
+    "Modules/_ctypes/libffi_osx/include/fficonfig.h",
+    "Modules/_ctypes/libffi_osx/include/ffitarget.h",
+    "Modules/_ctypes/libffi_osx/include/ppc-ffitarget.h",
+    "Modules/_ctypes/libffi_osx/include/x86-ffitarget.h",
+    "Modules/_ctypes/libffi_osx/powerpc/ppc-darwin.S",
+    "Modules/_ctypes/libffi_osx/powerpc/ppc-darwin.h",
+    "Modules/_ctypes/libffi_osx/powerpc/ppc-darwin_closure.S",
+    "Modules/_ctypes/libffi_osx/powerpc/ppc-ffi_darwin.c",
+    "Modules/_ctypes/libffi_osx/powerpc/ppc64-darwin_closure.S",
+    "Modules/_ctypes/libffi_osx/types.c",
+    "Modules/_ctypes/libffi_osx/x86/darwin64.S",
+    "Modules/_ctypes/libffi_osx/x86/x86-darwin.S",
+    "Modules/_ctypes/libffi_osx/x86/x86-ffi64.c",
+    "Modules/_ctypes/libffi_osx/x86/x86-ffi_darwin.c",
+    "Modules/_ctypes/malloc_closure.c",
+    "Modules/_ctypes/stgdict.c"
+  ],
   "_curses": [
     "Modules/_cursesmodule.c"
   ],
@@ -67,7 +145,52 @@
   "_dbm": [
     "Modules/_dbmmodule.c"
   ],
-  "_decimal": [],
+  "_decimal": [
+    "Modules/_decimal/README.txt",
+    "Modules/_decimal/_decimal.c",
+    "Modules/_decimal/docstrings.h",
+    "Modules/_decimal/libmpdec/README.txt",
+    "Modules/_decimal/libmpdec/basearith.c",
+    "Modules/_decimal/libmpdec/basearith.h",
+    "Modules/_decimal/libmpdec/bits.h",
+    "Modules/_decimal/libmpdec/constants.c",
+    "Modules/_decimal/libmpdec/constants.h",
+    "Modules/_decimal/libmpdec/context.c",
+    "Modules/_decimal/libmpdec/convolute.c",
+    "Modules/_decimal/libmpdec/convolute.h",
+    "Modules/_decimal/libmpdec/crt.c",
+    "Modules/_decimal/libmpdec/crt.h",
+    "Modules/_decimal/libmpdec/difradix2.c",
+    "Modules/_decimal/libmpdec/difradix2.h",
+    "Modules/_decimal/libmpdec/fnt.c",
+    "Modules/_decimal/libmpdec/fnt.h",
+    "Modules/_decimal/libmpdec/fourstep.c",
+    "Modules/_decimal/libmpdec/fourstep.h",
+    "Modules/_decimal/libmpdec/io.c",
+    "Modules/_decimal/libmpdec/io.h",
+    "Modules/_decimal/libmpdec/literature/REFERENCES.txt",
+    "Modules/_decimal/libmpdec/literature/bignum.txt",
+    "Modules/_decimal/libmpdec/literature/fnt.py",
+    "Modules/_decimal/libmpdec/literature/matrix-transform.txt",
+    "Modules/_decimal/libmpdec/literature/mulmod-64.txt",
+    "Modules/_decimal/libmpdec/literature/mulmod-ppro.txt",
+    "Modules/_decimal/libmpdec/literature/six-step.txt",
+    "Modules/_decimal/libmpdec/literature/umodarith.lisp",
+    "Modules/_decimal/libmpdec/mpalloc.c",
+    "Modules/_decimal/libmpdec/mpalloc.h",
+    "Modules/_decimal/libmpdec/mpdecimal.c",
+    "Modules/_decimal/libmpdec/mpdecimal.h",
+    "Modules/_decimal/libmpdec/numbertheory.c",
+    "Modules/_decimal/libmpdec/numbertheory.h",
+    "Modules/_decimal/libmpdec/sixstep.c",
+    "Modules/_decimal/libmpdec/sixstep.h",
+    "Modules/_decimal/libmpdec/transpose.c",
+    "Modules/_decimal/libmpdec/transpose.h",
+    "Modules/_decimal/libmpdec/typearith.h",
+    "Modules/_decimal/libmpdec/umodarith.h",
+    "Modules/_decimal/libmpdec/vccompat.h",
+    "Modules/_decimal/libmpdec/vcdiv64.asm"
+  ],
   "_elementtree": [
     "Modules/_elementtree.c"
   ],
@@ -83,8 +206,20 @@
   "_heapq": [
     "Modules/_heapqmodule.c"
   ],
-  "_imp": [],
-  "_io": [],
+  "_imp": [
+    "Python/import.c"
+  ],
+  "_io": [
+    "Modules/_io/_iomodule.c",
+    "Modules/_io/_iomodule.h",
+    "Modules/_io/bufferedio.c",
+    "Modules/_io/bytesio.c",
+    "Modules/_io/fileio.c",
+    "Modules/_io/iobase.c",
+    "Modules/_io/stringio.c",
+    "Modules/_io/textio.c",
+    "Modules/_io/winconsoleio.c"
+  ],
   "_json": [
     "Modules/_json.c"
   ],
@@ -105,9 +240,18 @@
   "_md5": [
     "Modules/md5module.c"
   ],
-  "_msi": [],
-  "_multibytecodec": [],
-  "_multiprocessing": [],
+  "_msi": [
+    "PC/_msi.c"
+  ],
+  "_multibytecodec": [
+    "Modules/cjkcodecs/multibytecodec.c",
+    "Modules/cjkcodecs/multibytecodec.h"
+  ],
+  "_multiprocessing": [
+    "Modules/_multiprocessing/multiprocessing.c",
+    "Modules/_multiprocessing/multiprocessing.h",
+    "Modules/_multiprocessing/semaphore.c"
+  ],
   "_opcode": [
     "Modules/_opcode.c"
   ],
@@ -120,7 +264,9 @@
   "_pickle": [
     "Modules/_pickle.c"
   ],
-  "_posixshmem": [],
+  "_posixshmem": [
+    "Modules/_multiprocessing/posixshmem.c"
+  ],
   "_posixsubprocess": [
     "Modules/_posixsubprocess.c"
   ],
@@ -145,16 +291,63 @@
   "_sha256": [
     "Modules/sha256module.c"
   ],
-  "_sha3": [],
+  "_sha3": [
+    "Modules/_sha3/README.txt",
+    "Modules/_sha3/cleanup.py",
+    "Modules/_sha3/kcp/KeccakHash.c",
+    "Modules/_sha3/kcp/KeccakHash.h",
+    "Modules/_sha3/kcp/KeccakP-1600-64.macros",
+    "Modules/_sha3/kcp/KeccakP-1600-SnP-opt32.h",
+    "Modules/_sha3/kcp/KeccakP-1600-SnP-opt64.h",
+    "Modules/_sha3/kcp/KeccakP-1600-SnP.h",
+    "Modules/_sha3/kcp/KeccakP-1600-inplace32BI.c",
+    "Modules/_sha3/kcp/KeccakP-1600-opt64-config.h",
+    "Modules/_sha3/kcp/KeccakP-1600-opt64.c",
+    "Modules/_sha3/kcp/KeccakP-1600-unrolling.macros",
+    "Modules/_sha3/kcp/KeccakSponge.c",
+    "Modules/_sha3/kcp/KeccakSponge.h",
+    "Modules/_sha3/kcp/KeccakSponge.inc",
+    "Modules/_sha3/kcp/PlSnP-Fallback.inc",
+    "Modules/_sha3/kcp/SnP-Relaned.h",
+    "Modules/_sha3/kcp/align.h",
+    "Modules/_sha3/sha3module.c"
+  ],
   "_sha512": [
     "Modules/sha512module.c"
   ],
-  "_signal": [],
+  "_signal": [
+    "Modules/signalmodule.c"
+  ],
   "_sitebuiltins": [
     "Lib/_sitebuiltins.py"
   ],
-  "_socket": [],
-  "_sqlite3": [],
+  "_socket": [
+    "Modules/addrinfo.h",
+    "Modules/getaddrinfo.c",
+    "Modules/getnameinfo.c",
+    "Modules/socketmodule.c",
+    "Modules/socketmodule.h"
+  ],
+  "_sqlite3": [
+    "Modules/_sqlite/cache.c",
+    "Modules/_sqlite/cache.h",
+    "Modules/_sqlite/connection.c",
+    "Modules/_sqlite/connection.h",
+    "Modules/_sqlite/cursor.c",
+    "Modules/_sqlite/cursor.h",
+    "Modules/_sqlite/microprotocols.c",
+    "Modules/_sqlite/microprotocols.h",
+    "Modules/_sqlite/module.c",
+    "Modules/_sqlite/module.h",
+    "Modules/_sqlite/prepare_protocol.c",
+    "Modules/_sqlite/prepare_protocol.h",
+    "Modules/_sqlite/row.c",
+    "Modules/_sqlite/row.h",
+    "Modules/_sqlite/statement.c",
+    "Modules/_sqlite/statement.h",
+    "Modules/_sqlite/util.c",
+    "Modules/_sqlite/util.h"
+  ],
   "_sre": [
     "Modules/_sre.c",
     "Modules/sre.h",
@@ -162,6 +355,7 @@
   ],
   "_ssl": [
     "Modules/_ssl.c",
+    "Modules/_ssl/debughelpers.c",
     "Modules/_ssl_data.h"
   ],
   "_stat": [
@@ -170,14 +364,18 @@
   "_statistics": [
     "Modules/_statisticsmodule.c"
   ],
-  "_string": [],
+  "_string": [
+    "Objects/unicodeobject.c"
+  ],
   "_strptime": [
     "Lib/_strptime.py"
   ],
   "_struct": [
     "Modules/_struct.c"
   ],
-  "_symtable": [],
+  "_symtable": [
+    "Modules/symtablemodule.c"
+  ],
   "_thread": [
     "Modules/_threadmodule.c"
   ],
@@ -194,7 +392,9 @@
   "_uuid": [
     "Modules/_uuidmodule.c"
   ],
-  "_warnings": [],
+  "_warnings": [
+    "Python/_warnings.c"
+  ],
   "_weakref": [
     "Modules/_weakref.c"
   ],
@@ -291,7 +491,9 @@
   "bisect": [
     "Lib/bisect.py"
   ],
-  "builtins": [],
+  "builtins": [
+    "Python/bltinmodule.c"
+  ],
   "bz2": [
     "Lib/bz2.py"
   ],
@@ -376,59 +578,6 @@
     "Lib/ctypes/macholib/fetch_macholib",
     "Lib/ctypes/macholib/fetch_macholib.bat",
     "Lib/ctypes/macholib/framework.py",
-    "Lib/ctypes/test/__init__.py",
-    "Lib/ctypes/test/__main__.py",
-    "Lib/ctypes/test/test_anon.py",
-    "Lib/ctypes/test/test_array_in_pointer.py",
-    "Lib/ctypes/test/test_arrays.py",
-    "Lib/ctypes/test/test_as_parameter.py",
-    "Lib/ctypes/test/test_bitfields.py",
-    "Lib/ctypes/test/test_buffers.py",
-    "Lib/ctypes/test/test_bytes.py",
-    "Lib/ctypes/test/test_byteswap.py",
-    "Lib/ctypes/test/test_callbacks.py",
-    "Lib/ctypes/test/test_cast.py",
-    "Lib/ctypes/test/test_cfuncs.py",
-    "Lib/ctypes/test/test_checkretval.py",
-    "Lib/ctypes/test/test_delattr.py",
-    "Lib/ctypes/test/test_errno.py",
-    "Lib/ctypes/test/test_find.py",
-    "Lib/ctypes/test/test_frombuffer.py",
-    "Lib/ctypes/test/test_funcptr.py",
-    "Lib/ctypes/test/test_functions.py",
-    "Lib/ctypes/test/test_incomplete.py",
-    "Lib/ctypes/test/test_init.py",
-    "Lib/ctypes/test/test_internals.py",
-    "Lib/ctypes/test/test_keeprefs.py",
-    "Lib/ctypes/test/test_libc.py",
-    "Lib/ctypes/test/test_loading.py",
-    "Lib/ctypes/test/test_macholib.py",
-    "Lib/ctypes/test/test_memfunctions.py",
-    "Lib/ctypes/test/test_numbers.py",
-    "Lib/ctypes/test/test_objects.py",
-    "Lib/ctypes/test/test_parameters.py",
-    "Lib/ctypes/test/test_pep3118.py",
-    "Lib/ctypes/test/test_pickling.py",
-    "Lib/ctypes/test/test_pointers.py",
-    "Lib/ctypes/test/test_prototypes.py",
-    "Lib/ctypes/test/test_python_api.py",
-    "Lib/ctypes/test/test_random_things.py",
-    "Lib/ctypes/test/test_refcounts.py",
-    "Lib/ctypes/test/test_repr.py",
-    "Lib/ctypes/test/test_returnfuncptrs.py",
-    "Lib/ctypes/test/test_simplesubclasses.py",
-    "Lib/ctypes/test/test_sizes.py",
-    "Lib/ctypes/test/test_slicing.py",
-    "Lib/ctypes/test/test_stringptr.py",
-    "Lib/ctypes/test/test_strings.py",
-    "Lib/ctypes/test/test_struct_fields.py",
-    "Lib/ctypes/test/test_structures.py",
-    "Lib/ctypes/test/test_unaligned_structures.py",
-    "Lib/ctypes/test/test_unicode.py",
-    "Lib/ctypes/test/test_values.py",
-    "Lib/ctypes/test/test_varsize_struct.py",
-    "Lib/ctypes/test/test_win32.py",
-    "Lib/ctypes/test/test_wintypes.py",
     "Lib/ctypes/util.py",
     "Lib/ctypes/wintypes.py"
   ],
@@ -508,51 +657,6 @@
     "Lib/distutils/msvccompiler.py",
     "Lib/distutils/spawn.py",
     "Lib/distutils/sysconfig.py",
-    "Lib/distutils/tests/Setup.sample",
-    "Lib/distutils/tests/__init__.py",
-    "Lib/distutils/tests/includetest.rst",
-    "Lib/distutils/tests/support.py",
-    "Lib/distutils/tests/test_archive_util.py",
-    "Lib/distutils/tests/test_bdist.py",
-    "Lib/distutils/tests/test_bdist_dumb.py",
-    "Lib/distutils/tests/test_bdist_msi.py",
-    "Lib/distutils/tests/test_bdist_rpm.py",
-    "Lib/distutils/tests/test_build.py",
-    "Lib/distutils/tests/test_build_clib.py",
-    "Lib/distutils/tests/test_build_ext.py",
-    "Lib/distutils/tests/test_build_py.py",
-    "Lib/distutils/tests/test_build_scripts.py",
-    "Lib/distutils/tests/test_check.py",
-    "Lib/distutils/tests/test_clean.py",
-    "Lib/distutils/tests/test_cmd.py",
-    "Lib/distutils/tests/test_config.py",
-    "Lib/distutils/tests/test_config_cmd.py",
-    "Lib/distutils/tests/test_core.py",
-    "Lib/distutils/tests/test_cygwinccompiler.py",
-    "Lib/distutils/tests/test_dep_util.py",
-    "Lib/distutils/tests/test_dir_util.py",
-    "Lib/distutils/tests/test_dist.py",
-    "Lib/distutils/tests/test_extension.py",
-    "Lib/distutils/tests/test_file_util.py",
-    "Lib/distutils/tests/test_filelist.py",
-    "Lib/distutils/tests/test_install.py",
-    "Lib/distutils/tests/test_install_data.py",
-    "Lib/distutils/tests/test_install_headers.py",
-    "Lib/distutils/tests/test_install_lib.py",
-    "Lib/distutils/tests/test_install_scripts.py",
-    "Lib/distutils/tests/test_log.py",
-    "Lib/distutils/tests/test_msvc9compiler.py",
-    "Lib/distutils/tests/test_msvccompiler.py",
-    "Lib/distutils/tests/test_register.py",
-    "Lib/distutils/tests/test_sdist.py",
-    "Lib/distutils/tests/test_spawn.py",
-    "Lib/distutils/tests/test_sysconfig.py",
-    "Lib/distutils/tests/test_text_file.py",
-    "Lib/distutils/tests/test_unixccompiler.py",
-    "Lib/distutils/tests/test_upload.py",
-    "Lib/distutils/tests/test_util.py",
-    "Lib/distutils/tests/test_version.py",
-    "Lib/distutils/tests/test_versionpredicate.py",
     "Lib/distutils/text_file.py",
     "Lib/distutils/unixccompiler.py",
     "Lib/distutils/util.py",
@@ -716,7 +820,25 @@
     "Lib/encodings/utf_8.py",
     "Lib/encodings/utf_8_sig.py",
     "Lib/encodings/uu_codec.py",
-    "Lib/encodings/zlib_codec.py"
+    "Lib/encodings/zlib_codec.py",
+    "Modules/cjkcodecs/README",
+    "Modules/cjkcodecs/_codecs_cn.c",
+    "Modules/cjkcodecs/_codecs_hk.c",
+    "Modules/cjkcodecs/_codecs_iso2022.c",
+    "Modules/cjkcodecs/_codecs_jp.c",
+    "Modules/cjkcodecs/_codecs_kr.c",
+    "Modules/cjkcodecs/_codecs_tw.c",
+    "Modules/cjkcodecs/alg_jisx0201.h",
+    "Modules/cjkcodecs/cjkcodecs.h",
+    "Modules/cjkcodecs/emu_jisx0213_2000.h",
+    "Modules/cjkcodecs/mappings_cn.h",
+    "Modules/cjkcodecs/mappings_hk.h",
+    "Modules/cjkcodecs/mappings_jisx0213_pair.h",
+    "Modules/cjkcodecs/mappings_jp.h",
+    "Modules/cjkcodecs/mappings_kr.h",
+    "Modules/cjkcodecs/mappings_tw.h",
+    "Modules/cjkcodecs/multibytecodec.c",
+    "Modules/cjkcodecs/multibytecodec.h"
   ],
   "ensurepip": [
     "Lib/ensurepip/__init__.py",
@@ -864,70 +986,6 @@
     "Lib/idlelib/idle.bat",
     "Lib/idlelib/idle.py",
     "Lib/idlelib/idle.pyw",
-    "Lib/idlelib/idle_test/README.txt",
-    "Lib/idlelib/idle_test/__init__.py",
-    "Lib/idlelib/idle_test/htest.py",
-    "Lib/idlelib/idle_test/mock_idle.py",
-    "Lib/idlelib/idle_test/mock_tk.py",
-    "Lib/idlelib/idle_test/template.py",
-    "Lib/idlelib/idle_test/test_autocomplete.py",
-    "Lib/idlelib/idle_test/test_autocomplete_w.py",
-    "Lib/idlelib/idle_test/test_autoexpand.py",
-    "Lib/idlelib/idle_test/test_browser.py",
-    "Lib/idlelib/idle_test/test_calltip.py",
-    "Lib/idlelib/idle_test/test_calltip_w.py",
-    "Lib/idlelib/idle_test/test_codecontext.py",
-    "Lib/idlelib/idle_test/test_colorizer.py",
-    "Lib/idlelib/idle_test/test_config.py",
-    "Lib/idlelib/idle_test/test_config_key.py",
-    "Lib/idlelib/idle_test/test_configdialog.py",
-    "Lib/idlelib/idle_test/test_debugger.py",
-    "Lib/idlelib/idle_test/test_debugger_r.py",
-    "Lib/idlelib/idle_test/test_debugobj.py",
-    "Lib/idlelib/idle_test/test_debugobj_r.py",
-    "Lib/idlelib/idle_test/test_delegator.py",
-    "Lib/idlelib/idle_test/test_editmenu.py",
-    "Lib/idlelib/idle_test/test_editor.py",
-    "Lib/idlelib/idle_test/test_filelist.py",
-    "Lib/idlelib/idle_test/test_format.py",
-    "Lib/idlelib/idle_test/test_grep.py",
-    "Lib/idlelib/idle_test/test_help.py",
-    "Lib/idlelib/idle_test/test_help_about.py",
-    "Lib/idlelib/idle_test/test_history.py",
-    "Lib/idlelib/idle_test/test_hyperparser.py",
-    "Lib/idlelib/idle_test/test_iomenu.py",
-    "Lib/idlelib/idle_test/test_macosx.py",
-    "Lib/idlelib/idle_test/test_mainmenu.py",
-    "Lib/idlelib/idle_test/test_multicall.py",
-    "Lib/idlelib/idle_test/test_outwin.py",
-    "Lib/idlelib/idle_test/test_parenmatch.py",
-    "Lib/idlelib/idle_test/test_pathbrowser.py",
-    "Lib/idlelib/idle_test/test_percolator.py",
-    "Lib/idlelib/idle_test/test_pyparse.py",
-    "Lib/idlelib/idle_test/test_pyshell.py",
-    "Lib/idlelib/idle_test/test_query.py",
-    "Lib/idlelib/idle_test/test_redirector.py",
-    "Lib/idlelib/idle_test/test_replace.py",
-    "Lib/idlelib/idle_test/test_rpc.py",
-    "Lib/idlelib/idle_test/test_run.py",
-    "Lib/idlelib/idle_test/test_runscript.py",
-    "Lib/idlelib/idle_test/test_scrolledlist.py",
-    "Lib/idlelib/idle_test/test_search.py",
-    "Lib/idlelib/idle_test/test_searchbase.py",
-    "Lib/idlelib/idle_test/test_searchengine.py",
-    "Lib/idlelib/idle_test/test_sidebar.py",
-    "Lib/idlelib/idle_test/test_squeezer.py",
-    "Lib/idlelib/idle_test/test_stackviewer.py",
-    "Lib/idlelib/idle_test/test_statusbar.py",
-    "Lib/idlelib/idle_test/test_text.py",
-    "Lib/idlelib/idle_test/test_textview.py",
-    "Lib/idlelib/idle_test/test_tooltip.py",
-    "Lib/idlelib/idle_test/test_tree.py",
-    "Lib/idlelib/idle_test/test_undo.py",
-    "Lib/idlelib/idle_test/test_warning.py",
-    "Lib/idlelib/idle_test/test_window.py",
-    "Lib/idlelib/idle_test/test_zoomheight.py",
-    "Lib/idlelib/idle_test/test_zzdummy.py",
     "Lib/idlelib/iomenu.py",
     "Lib/idlelib/macosx.py",
     "Lib/idlelib/mainmenu.py",
@@ -1079,35 +1137,7 @@
     "Lib/lib2to3/pgen2/tokenize.py",
     "Lib/lib2to3/pygram.py",
     "Lib/lib2to3/pytree.py",
-    "Lib/lib2to3/refactor.py",
-    "Lib/lib2to3/tests/__init__.py",
-    "Lib/lib2to3/tests/__main__.py",
-    "Lib/lib2to3/tests/data/README",
-    "Lib/lib2to3/tests/data/bom.py",
-    "Lib/lib2to3/tests/data/crlf.py",
-    "Lib/lib2to3/tests/data/different_encoding.py",
-    "Lib/lib2to3/tests/data/false_encoding.py",
-    "Lib/lib2to3/tests/data/fixers/bad_order.py",
-    "Lib/lib2to3/tests/data/fixers/myfixes/__init__.py",
-    "Lib/lib2to3/tests/data/fixers/myfixes/fix_explicit.py",
-    "Lib/lib2to3/tests/data/fixers/myfixes/fix_first.py",
-    "Lib/lib2to3/tests/data/fixers/myfixes/fix_last.py",
-    "Lib/lib2to3/tests/data/fixers/myfixes/fix_parrot.py",
-    "Lib/lib2to3/tests/data/fixers/myfixes/fix_preorder.py",
-    "Lib/lib2to3/tests/data/fixers/no_fixer_cls.py",
-    "Lib/lib2to3/tests/data/fixers/parrot_example.py",
-    "Lib/lib2to3/tests/data/infinite_recursion.py",
-    "Lib/lib2to3/tests/data/py2_test_grammar.py",
-    "Lib/lib2to3/tests/data/py3_test_grammar.py",
-    "Lib/lib2to3/tests/pytree_idempotency.py",
-    "Lib/lib2to3/tests/support.py",
-    "Lib/lib2to3/tests/test_all_fixers.py",
-    "Lib/lib2to3/tests/test_fixers.py",
-    "Lib/lib2to3/tests/test_main.py",
-    "Lib/lib2to3/tests/test_parser.py",
-    "Lib/lib2to3/tests/test_pytree.py",
-    "Lib/lib2to3/tests/test_refactor.py",
-    "Lib/lib2to3/tests/test_util.py"
+    "Lib/lib2to3/refactor.py"
   ],
   "linecache": [
     "Lib/linecache.py"
@@ -1129,7 +1159,9 @@
   "mailcap": [
     "Lib/mailcap.py"
   ],
-  "marshal": [],
+  "marshal": [
+    "Python/marshal.c"
+  ],
   "math": [
     "Modules/_math.c",
     "Modules/_math.h",
@@ -1150,7 +1182,9 @@
     "Lib/msilib/sequence.py",
     "Lib/msilib/text.py"
   ],
-  "msvcrt": [],
+  "msvcrt": [
+    "PC/msvcrtmodule.c"
+  ],
   "multiprocessing": [
     "Lib/multiprocessing/__init__.py",
     "Lib/multiprocessing/connection.py",
@@ -1327,8 +1361,7 @@
     "Lib/shutil.py"
   ],
   "signal": [
-    "Lib/signal.py",
-    "Modules/signalmodule.c"
+    "Lib/signal.py"
   ],
   "site": [
     "Lib/site.py"
@@ -1343,12 +1376,7 @@
     "Lib/sndhdr.py"
   ],
   "socket": [
-    "Lib/socket.py",
-    "Modules/addrinfo.h",
-    "Modules/getaddrinfo.c",
-    "Modules/getnameinfo.c",
-    "Modules/socketmodule.c",
-    "Modules/socketmodule.h"
+    "Lib/socket.py"
   ],
   "socketserver": [
     "Lib/socketserver.py"
@@ -1359,17 +1387,7 @@
   "sqlite3": [
     "Lib/sqlite3/__init__.py",
     "Lib/sqlite3/dbapi2.py",
-    "Lib/sqlite3/dump.py",
-    "Lib/sqlite3/test/__init__.py",
-    "Lib/sqlite3/test/backup.py",
-    "Lib/sqlite3/test/dbapi.py",
-    "Lib/sqlite3/test/dump.py",
-    "Lib/sqlite3/test/factory.py",
-    "Lib/sqlite3/test/hooks.py",
-    "Lib/sqlite3/test/regression.py",
-    "Lib/sqlite3/test/transactions.py",
-    "Lib/sqlite3/test/types.py",
-    "Lib/sqlite3/test/userfunctions.py"
+    "Lib/sqlite3/dump.py"
   ],
   "sre_compile": [
     "Lib/sre_compile.py"
@@ -1406,10 +1424,11 @@
     "Lib/sunau.py"
   ],
   "symtable": [
-    "Lib/symtable.py",
-    "Modules/symtablemodule.c"
+    "Lib/symtable.py"
   ],
-  "sys": [],
+  "sys": [
+    "Python/sysmodule.c"
+  ],
   "sysconfig": [
     "Lib/sysconfig.py"
   ],
@@ -1459,28 +1478,6 @@
     "Lib/tkinter/messagebox.py",
     "Lib/tkinter/scrolledtext.py",
     "Lib/tkinter/simpledialog.py",
-    "Lib/tkinter/test/README",
-    "Lib/tkinter/test/__init__.py",
-    "Lib/tkinter/test/runtktests.py",
-    "Lib/tkinter/test/support.py",
-    "Lib/tkinter/test/test_tkinter/__init__.py",
-    "Lib/tkinter/test/test_tkinter/test_colorchooser.py",
-    "Lib/tkinter/test/test_tkinter/test_font.py",
-    "Lib/tkinter/test/test_tkinter/test_geometry_managers.py",
-    "Lib/tkinter/test/test_tkinter/test_images.py",
-    "Lib/tkinter/test/test_tkinter/test_loadtk.py",
-    "Lib/tkinter/test/test_tkinter/test_messagebox.py",
-    "Lib/tkinter/test/test_tkinter/test_misc.py",
-    "Lib/tkinter/test/test_tkinter/test_simpledialog.py",
-    "Lib/tkinter/test/test_tkinter/test_text.py",
-    "Lib/tkinter/test/test_tkinter/test_variables.py",
-    "Lib/tkinter/test/test_tkinter/test_widgets.py",
-    "Lib/tkinter/test/test_ttk/__init__.py",
-    "Lib/tkinter/test/test_ttk/test_extensions.py",
-    "Lib/tkinter/test/test_ttk/test_functions.py",
-    "Lib/tkinter/test/test_ttk/test_style.py",
-    "Lib/tkinter/test/test_ttk/test_widgets.py",
-    "Lib/tkinter/test/widget_tests.py",
     "Lib/tkinter/tix.py",
     "Lib/tkinter/ttk.py",
     "Modules/tkinter.h"
@@ -1554,36 +1551,6 @@
     "Lib/unittest/runner.py",
     "Lib/unittest/signals.py",
     "Lib/unittest/suite.py",
-    "Lib/unittest/test/__init__.py",
-    "Lib/unittest/test/__main__.py",
-    "Lib/unittest/test/_test_warnings.py",
-    "Lib/unittest/test/dummy.py",
-    "Lib/unittest/test/support.py",
-    "Lib/unittest/test/test_assertions.py",
-    "Lib/unittest/test/test_async_case.py",
-    "Lib/unittest/test/test_break.py",
-    "Lib/unittest/test/test_case.py",
-    "Lib/unittest/test/test_discovery.py",
-    "Lib/unittest/test/test_functiontestcase.py",
-    "Lib/unittest/test/test_loader.py",
-    "Lib/unittest/test/test_program.py",
-    "Lib/unittest/test/test_result.py",
-    "Lib/unittest/test/test_runner.py",
-    "Lib/unittest/test/test_setups.py",
-    "Lib/unittest/test/test_skipping.py",
-    "Lib/unittest/test/test_suite.py",
-    "Lib/unittest/test/testmock/__init__.py",
-    "Lib/unittest/test/testmock/__main__.py",
-    "Lib/unittest/test/testmock/support.py",
-    "Lib/unittest/test/testmock/testasync.py",
-    "Lib/unittest/test/testmock/testcallable.py",
-    "Lib/unittest/test/testmock/testhelpers.py",
-    "Lib/unittest/test/testmock/testmagicmethods.py",
-    "Lib/unittest/test/testmock/testmock.py",
-    "Lib/unittest/test/testmock/testpatch.py",
-    "Lib/unittest/test/testmock/testsealable.py",
-    "Lib/unittest/test/testmock/testsentinel.py",
-    "Lib/unittest/test/testmock/testwith.py",
     "Lib/unittest/util.py"
   ],
   "urllib": [
@@ -1623,8 +1590,12 @@
   "webbrowser": [
     "Lib/webbrowser.py"
   ],
-  "winreg": [],
-  "winsound": [],
+  "winreg": [
+    "PC/winreg.c"
+  ],
+  "winsound": [
+    "PC/winsound.c"
+  ],
   "wsgiref": [
     "Lib/wsgiref/__init__.py",
     "Lib/wsgiref/handlers.py",
@@ -1658,7 +1629,29 @@
     "Lib/xml/sax/expatreader.py",
     "Lib/xml/sax/handler.py",
     "Lib/xml/sax/saxutils.py",
-    "Lib/xml/sax/xmlreader.py"
+    "Lib/xml/sax/xmlreader.py",
+    "Modules/expat/COPYING",
+    "Modules/expat/ascii.h",
+    "Modules/expat/asciitab.h",
+    "Modules/expat/expat.h",
+    "Modules/expat/expat_config.h",
+    "Modules/expat/expat_external.h",
+    "Modules/expat/iasciitab.h",
+    "Modules/expat/internal.h",
+    "Modules/expat/latin1tab.h",
+    "Modules/expat/nametab.h",
+    "Modules/expat/pyexpatns.h",
+    "Modules/expat/siphash.h",
+    "Modules/expat/utf8tab.h",
+    "Modules/expat/winconfig.h",
+    "Modules/expat/xmlparse.c",
+    "Modules/expat/xmlrole.c",
+    "Modules/expat/xmlrole.h",
+    "Modules/expat/xmltok.c",
+    "Modules/expat/xmltok.h",
+    "Modules/expat/xmltok_impl.c",
+    "Modules/expat/xmltok_impl.h",
+    "Modules/expat/xmltok_ns.c"
   ],
   "xmlrpc": [
     "Lib/xmlrpc/__init__.py",

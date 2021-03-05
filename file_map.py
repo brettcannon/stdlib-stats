@@ -27,7 +27,7 @@ def add_directory(module, path):
     for item in path.iterdir():
         if item.is_file():
             add_path(module, item)
-        elif item.is_dir() and item.name != "clinic":
+        elif item.is_dir() and item.name not in {"clinic", "test", "tests", "idle_test"}:
             add_directory(module, item)
 
 
@@ -53,8 +53,9 @@ if __name__ == "__main__":
                 continue
             if item.name.startswith("xx") or item.name.startswith("_test"):
                 continue
-            elif item.name in {"addrinfo.h", "getaddrinfo.c", "getnameinfo.c"}:
-                add_path("socket", item)
+            elif item.name in {"addrinfo.h", "getaddrinfo.c", "getnameinfo.c",
+                               "socketmodule.c", "socketmodule.h"}:
+                add_path("_socket", item)
             elif item.stem == "sre_lib":
                 add_path("_sre", item)
             elif item.stem == "rotatingtree":
@@ -82,6 +83,10 @@ if __name__ == "__main__":
                     add_path(module, item)
             elif item.name == "sre.h":
                 add_path("_sre", item)
+            elif item.stem == "signalmodule":
+                add_path("_signal", item)
+            elif item.name == "symtablemodule.c":
+                add_path("_symtable", item)
             elif item.stem in MAPPING:
                 add_path(item.stem, item)
             elif item.stem.endswith("module"):
@@ -96,10 +101,55 @@ if __name__ == "__main__":
             else:
                 raise ValueError(f"don't know what to do with {item!r}")
         elif item.is_dir():
-            # XXX walk directories
-            pass
+            if item.name in {"_xxtestfuzz", "clinic"}:
+                continue
+            elif item.name == "expat":
+                add_directory("xml", item)
+            elif item.name == "_sqlite":
+                add_directory("_sqlite3", item)
+            elif item.name == "cjkcodecs":
+                for subitem in item.iterdir():
+                    if subitem.stem in MAPPING:
+                        add_path(subitem.stem, subitem)
+                    elif f"_{subitem.stem}" in MAPPING:
+                        add_path(f"_{subitem.stem}", subitem)
+                add_directory("encodings", item)
+            elif item.name in MAPPING:
+                add_directory(item.name, item)
+            else:
+                raise ValueError(f"don't know what to do with {item!r}")
         else:
             raise ValueError(f"don't recognize what {item!r} is")
+
+    for module, paths in MAPPING.items():
+        if module == "_ast":
+            paths.append("Python/Python-ast.c")
+        elif module == "_imp":
+            paths.append("Python/import.c")
+        elif module == "_msi":
+            paths.append("PC/_msi.c")
+        elif module == "_string":
+            paths.append("Objects/unicodeobject.c")
+        elif module == "_warnings":
+            paths.append("Python/_warnings.c")
+        elif module == "builtins":
+            paths.append("Python/bltinmodule.c")
+        elif module == "marshal":
+            paths.append("Python/marshal.c")
+        elif module == "msvcrt":
+            paths.append("PC/msvcrtmodule.c")
+        elif module == "sys":
+            paths.append("Python/sysmodule.c")
+        elif module == "winreg":
+            paths.append("PC/winreg.c")
+        elif module == "winsound":
+            paths.append("PC/winsound.c")
+        elif module == "_posixshmem":
+            rel_path = "Modules/_multiprocessing/posixshmem.c"
+            paths.append(rel_path)
+            MAPPING["_multiprocessing"].remove(rel_path)
+        elif not paths:
+            raise ValueError("not paths for", module)
 
     for file_paths in MAPPING.values():
         file_paths.sort()
