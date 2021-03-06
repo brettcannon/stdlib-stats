@@ -23,14 +23,16 @@ Ignores Argument Clinic files and tests, but includes header files.
 
 ## Module details
 
+- `required.json` lists the modules required to start Python (based on
+  `python -v -S -c pass`)
+
 XXX
 
+- Usage by public projects/repos count
+- Commit details (first commit, total commits, commits since released)
 - Release and date the module was introduced (inferred by the firt date of a
   `X.Y.0` release that comes after the earliest commit of any file for a module)
-- Required to start CPython (based on `python -v -S -c "pass"`)
 - Number of open PRs (based on files edited by PRs targeting `master`)
-- Number of commits (based on total commits for all files that make up the module)
-- Usage by public projects/repos count
 - Category according to https://docs.python.org/3/library/
 
 XXX https://en.wikipedia.org/wiki/History_of_Python#Table_of_versions

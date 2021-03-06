@@ -1,0 +1,19 @@
+[
+  "_abc",
+  "_codecs",
+  "_imp",
+  "_io",
+  "_signal",
+  "_thread",
+  "_warnings",
+  "_weakref",
+  "abc",
+  "codecs",
+  "encodings",
+  "importlib",
+  "io",
+  "marshal",
+  "posix",
+  "time",
+  "zipimport"
+]
