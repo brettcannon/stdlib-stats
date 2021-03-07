@@ -14,8 +14,6 @@ of their equivalent public API, they not listed as a dependent
 (e.g. `multiprocessing` directly using `_weakrefset` instead of going through
 `weakref`).
 
-Data is verified via `private_modules.py`.
-
 ## Map file to module
 Ignores Argument Clinic files and tests, but includes header files.
 
@@ -24,11 +22,15 @@ Ignores Argument Clinic files and tests, but includes header files.
 ## Module details
 
 - `required.json` lists the modules required to start Python (based on
-  `python -v -S -c pass`)
+  `python -v -S -c pass`).
+- `usage.json` lists the modules used by the 4000 most downloaded projects
+   over the past year according to `top-pypi-packages-365-days.json` from
+   [Top PyPI Packages](https://hugovk.github.io/top-pypi-packages/) and
+   downloaded by
+   [isidentical/syntax_test_suite](https://github.com/isidentical/syntax_test_suite).
 
 XXX
 
-- Usage by public projects/repos count
 - Commit details (first commit, total commits, commits since released)
 - Release and date the module was introduced (inferred by the firt date of a
   `X.Y.0` release that comes after the earliest commit of any file for a module)
