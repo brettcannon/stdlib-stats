@@ -1,0 +1,277 @@
+{
+  "allos": [
+    "argparse",
+    "ctypes",
+    "curses",
+    "errno",
+    "getopt",
+    "getpass",
+    "io",
+    "logging",
+    "os",
+    "platform",
+    "time"
+  ],
+  "archiving": [
+    "bz2",
+    "gzip",
+    "lzma",
+    "tarfile",
+    "zipfile",
+    "zlib"
+  ],
+  "binary": [
+    "codecs",
+    "encodings",
+    "struct"
+  ],
+  "concurrency": [
+    "_thread",
+    "concurrent",
+    "contextvars",
+    "multiprocessing",
+    "queue",
+    "sched",
+    "subprocess",
+    "threading"
+  ],
+  "crypto": [
+    "hashlib",
+    "hmac",
+    "secrets"
+  ],
+  "custominterp": [
+    "code",
+    "codeop"
+  ],
+  "datatypes": [
+    "array",
+    "bisect",
+    "calendar",
+    "collections",
+    "copy",
+    "datetime",
+    "enum",
+    "graphlib",
+    "heapq",
+    "pprint",
+    "reprlib",
+    "types",
+    "weakref",
+    "zoneinfo"
+  ],
+  "debug": [
+    "bdb",
+    "cProfile",
+    "faulthandler",
+    "pdb",
+    "profile",
+    "pstats",
+    "timeit",
+    "trace",
+    "tracemalloc"
+  ],
+  "development": [
+    "doctest",
+    "lib2to3",
+    "pydoc",
+    "typing",
+    "unittest"
+  ],
+  "distribution": [
+    "distutils",
+    "ensurepip",
+    "venv",
+    "zipapp"
+  ],
+  "eastereggs": [
+    "antigravity",
+    "this"
+  ],
+  "experiment": [
+    "_xxsubinterpreters"
+  ],
+  "fileformats": [
+    "configparser",
+    "csv",
+    "netrc",
+    "plistlib",
+    "xdrlib"
+  ],
+  "filesys": [
+    "filecmp",
+    "fileinput",
+    "fnmatch",
+    "glob",
+    "linecache",
+    "os",
+    "pathlib",
+    "shutil",
+    "stat",
+    "tempfile"
+  ],
+  "frameworks": [
+    "cmd",
+    "shlex",
+    "turtle",
+    "turtledemo"
+  ],
+  "functional": [
+    "functools",
+    "itertools",
+    "operator"
+  ],
+  "i18n": [
+    "gettext",
+    "locale"
+  ],
+  "internet": [
+    "cgi",
+    "cgitb",
+    "ftplib",
+    "http",
+    "imaplib",
+    "ipaddress",
+    "nntplib",
+    "poplib",
+    "smtpd",
+    "smtplib",
+    "socketserver",
+    "telnetlib",
+    "urllib",
+    "uuid",
+    "webbrowser",
+    "wsgiref",
+    "xmlrpc"
+  ],
+  "ipc": [
+    "asynchat",
+    "asyncio",
+    "asyncore",
+    "mmap",
+    "select",
+    "selectors",
+    "signal",
+    "socket",
+    "ssl"
+  ],
+  "language": [
+    "ast",
+    "compileall",
+    "dis",
+    "keyword",
+    "pickletools",
+    "py_compile",
+    "pyclbr",
+    "symtable",
+    "tabnanny",
+    "token",
+    "tokenize"
+  ],
+  "markup": [
+    "html",
+    "pyexpat",
+    "xml"
+  ],
+  "mm": [
+    "aifc",
+    "audioop",
+    "chunk",
+    "colorsys",
+    "imghdr",
+    "ossaudiodev",
+    "sndhdr",
+    "sunau",
+    "wave"
+  ],
+  "modules": [
+    "importlib",
+    "modulefinder",
+    "pkgutil",
+    "runpy",
+    "zipimport"
+  ],
+  "netdata": [
+    "base64",
+    "binascii",
+    "binhex",
+    "email",
+    "json",
+    "mailbox",
+    "mailcap",
+    "mimetypes",
+    "quopri",
+    "uu"
+  ],
+  "numeric": [
+    "cmath",
+    "decimal",
+    "fractions",
+    "math",
+    "numbers",
+    "random",
+    "statistics"
+  ],
+  "persistence": [
+    "copyreg",
+    "dbm",
+    "marshal",
+    "pickle",
+    "shelve",
+    "sqlite3"
+  ],
+  "python": [
+    "__future__",
+    "abc",
+    "atexit",
+    "builtins",
+    "contextlib",
+    "dataclasses",
+    "gc",
+    "inspect",
+    "site",
+    "sys",
+    "sysconfig",
+    "traceback",
+    "warnings"
+  ],
+  "superseded": [
+    "imp",
+    "optparse"
+  ],
+  "text": [
+    "difflib",
+    "re",
+    "readline",
+    "rlcompleter",
+    "string",
+    "stringprep",
+    "textwrap",
+    "unicodedata"
+  ],
+  "tk": [
+    "idlelib",
+    "tkinter"
+  ],
+  "unix": [
+    "crypt",
+    "fcntl",
+    "grp",
+    "nis",
+    "pipes",
+    "posix",
+    "pty",
+    "pwd",
+    "resource",
+    "spwd",
+    "syslog",
+    "termios",
+    "tty"
+  ],
+  "windows": [
+    "msilib",
+    "msvcrt",
+    "winreg",
+    "winsound"
+  ]
+}
