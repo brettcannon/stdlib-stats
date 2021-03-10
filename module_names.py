@@ -5,6 +5,7 @@ import json
 import sys
 
 module_names = set(sys.stdlib_module_names)
+# https://bugs.python.org/issue43456
 module_names.remove("_xxsubinterpreters")
 
 with open("module_names.json", "w", encoding="utf-8") as file:
