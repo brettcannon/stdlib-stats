@@ -406,9 +406,6 @@
     "Modules/overlapped.c",
     "Modules/winreparse.h"
   ],
-  "_xxsubinterpreters": [
-    "Modules/_xxsubinterpretersmodule.c"
-  ],
   "_zoneinfo": [
     "Modules/_zoneinfo.c"
   ],
