@@ -2,9 +2,19 @@
 
 Various statistics on Python's standard library.
 
-XXX stored to a sqlite3 database
+## Organized data
 
-## Map module to public module
+`stdlib.csv` contains various details about the modules in the stdlib. The table
+is built using various JSON files found in this repository (discussed below).
+To tweak how various things are treated, you can edit the JSON files and
+run `aggregate.py` to update it accordingly.
+
+The `stats.ipynb` is a Jupyter notebook which contains various charts that try
+to analyze the data from the CSV in various ways.
+
+## Raw data
+
+### Map module to public module
 Public availability is (mostly) determined by documentation existing in
 `Doc/library/`.
 
@@ -14,28 +24,35 @@ of their equivalent public API, they not listed as a dependent
 (e.g. `multiprocessing` directly using `_weakrefset` instead of going through
 `weakref`).
 
-## Map file to module
+### Map file to module
 Ignores Argument Clinic files and tests, but includes header files.
 
 `file_map.json` maps module name to relative file paths in a git clone.
 
-## Module details
+### Modules required to start Python
+`required.json` lists the modules required to start Python (based on
+`python -v -S -c pass`).
 
-- `required.json` lists the modules required to start Python (based on
-  `python -v -S -c pass`).
-- `usage.json` lists the modules used by the 4000 most downloaded projects
-   over the past year according to `top-pypi-packages-365-days.json` from
-   [Top PyPI Packages](https://hugovk.github.io/top-pypi-packages/) and
-   downloaded by
-   [isidentical/syntax_test_suite](https://github.com/isidentical/syntax_test_suite).
-- `categories.json` groups modules by category accoring to the
-  [library index](https://docs.python.org/3/library/index.html).
+### Usage of a module in the public
+`usage.json` lists the modules used by the 4000 most downloaded projects
+over the past year on PyPI.
+
+The list of projects is listed in `top-pypi-packages-365-days.json` as fetched
+from [Top PyPI Packages](https://hugovk.github.io/top-pypi-packages/). The
+projects are downloaded by
+[isidentical/syntax_test_suite](https://github.com/isidentical/syntax_test_suite).
+
+
+### Grouped by category
+`categories.json` groups modules by category accoring to the
+[library index](https://docs.python.org/3/library/index.html).
+
+The `__future__` module is specially treated and put in its own category.
 
 XXX
 
 - Commit details (first commit, total commits, commits since released)
 - Release and date the module was introduced (inferred by the firt date of a
-  `X.Y.0` release that comes after the earliest commit of any file for a module)
+  `X.Y.0` release that comes after the earliest commit of any file for a module);
+  https://en.wikipedia.org/wiki/History_of_Python#Table_of_versions
 - Number of open PRs (based on files edited by PRs targeting `master`)
-
-XXX https://en.wikipedia.org/wiki/History_of_Python#Table_of_versions
