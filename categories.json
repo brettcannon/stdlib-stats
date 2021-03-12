@@ -88,9 +88,6 @@
     "antigravity",
     "this"
   ],
-  "experiment": [
-    "_xxsubinterpreters"
-  ],
   "fileformats": [
     "configparser",
     "csv",
@@ -170,7 +167,6 @@
   ],
   "markup": [
     "html",
-    "pyexpat",
     "xml"
   ],
   "mm": [
