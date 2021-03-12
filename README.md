@@ -9,6 +9,9 @@ is built using various JSON files found in this repository (discussed below).
 To tweak how various things are treated, you can edit the JSON files and
 run `aggregate.py` to update it accordingly.
 
+The `category_usage.csv` counts the number of projects which use a specify
+module category.
+
 The `stats.ipynb` is a Jupyter notebook which contains various charts that try
 to analyze the data from the CSV in various ways.
 
@@ -52,7 +55,7 @@ The `__future__` module is specially treated and put in its own category.
 XXX
 
 - Commit details (first commit, total commits, commits since released)
-- Release and date the module was introduced (inferred by the firt date of a
+- Release and date the module was introduced (inferred by the first date of a
   `X.Y.0` release that comes after the earliest commit of any file for a module);
   https://en.wikipedia.org/wiki/History_of_Python#Table_of_versions
 - Number of open PRs (based on files edited by PRs targeting `master`)

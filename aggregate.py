@@ -4,7 +4,7 @@ import pathlib
 
 
 PATH = pathlib.Path("stdlib.csv")
-
+CATEGORY_USAGE_PATH = pathlib.Path("category_usage.csv")
 
 def main():
 
@@ -28,20 +28,29 @@ def main():
             data[module]["category"] = category
 
     used_by = {module: set() for module in data}
+    category_used_by = {category: set() for category in categories}
     with open("usage.json", "rb") as file:
         usage = json.load(file)
     for project, modules in usage.items():
         for module in modules:
             public_name = private_to_public[module]
             used_by[public_name].add(project)
+            category_used_by[data[public_name]["category"]].add(project)
     for module, projects in used_by.items():
         data[module]["project_count"] = len(projects)
+
 
     with PATH.open("w", newline="", encoding="utf-8") as file:
         columns = ["name", "category", "project_count"]
         writer = csv.DictWriter(file, fieldnames=columns)
         writer.writeheader()
         writer.writerows(data.values())
+
+    with CATEGORY_USAGE_PATH.open("w", newline="", encoding="utf-8") as file:
+        writer = csv.writer(file)
+        writer.writerow(["category", "project_count"])
+        writer.writerows((category, len(users))
+                         for category, users in category_used_by.items())
 
 
 if  __name__ == "__main__":
