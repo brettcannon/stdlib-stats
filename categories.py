@@ -63,8 +63,6 @@ private_modules = {name for modules in module_visibility.values() for name in mo
 
 categories["eastereggs"] = ["antigravity", "this"]
 found.update(categories["eastereggs"])
-categories["experiment"] = ["_xxsubinterpreters"]
-found.add("_xxsubinterpreters")
 
 if diff := module_names - private_modules - found:
     print("Public modules with no category:", sorted(diff))

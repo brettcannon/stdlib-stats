@@ -1,4 +1,7 @@
 {
+  "__future__": [
+    "__future__"
+  ],
   "allos": [
     "argparse",
     "ctypes",
@@ -217,7 +220,6 @@
     "sqlite3"
   ],
   "python": [
-    "__future__",
     "abc",
     "atexit",
     "builtins",
