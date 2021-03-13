@@ -27,6 +27,17 @@ def main():
         for module in modules:
             data[module]["category"] = category
 
+    # XXX file_map.json
+
+    with open("required.json", "rb") as file:
+        required_modules = json.load(file)
+    for module in required_modules:
+        public_module = private_to_public[module]
+        data[public_module]["required"] = True
+    for  module_data in data.values():
+        if "required" not in module_data:
+            module_data["required"] = False
+
     used_by = {module: set() for module in data}
     category_used_by = {category: set() for category in categories}
     with open("usage.json", "rb") as file:
@@ -41,7 +52,7 @@ def main():
 
 
     with PATH.open("w", newline="", encoding="utf-8") as file:
-        columns = ["name", "category", "project_count"]
+        columns = ["name", "required", "category", "project_count"]
         writer = csv.DictWriter(file, fieldnames=columns)
         writer.writeheader()
         writer.writerows(data.values())
