@@ -52,9 +52,13 @@ projects are downloaded by
 
 The `__future__` module is specially treated and put in its own category.
 
+### Commit stats per file
+`commit_stats.json` tracks the oldest, newest, and SHA hashes of all the commits
+made on a specific file.
+
 XXX
 
-- Commit details (first commit, total commits, commits since released)
+- Commit details (first commit, last commit, total commits, commits since released)
 - Release and date the module was introduced (inferred by the first date of a
   `X.Y.0` release that comes after the earliest commit of any file for a module);
   https://en.wikipedia.org/wiki/History_of_Python#Table_of_versions
