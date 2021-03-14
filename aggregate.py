@@ -27,7 +27,25 @@ def main():
         for module in modules:
             data[module]["category"] = category
 
-    # XXX file_map.json
+    module_commit_stats = {}
+    with open("file_map.json", "rb") as file:
+        file_map = json.load(file)
+    with open("commit_stats.json", "rb") as file:
+        file_commit_stats = json.load(file)
+    for module, files in file_map.items():
+        public_module = private_to_public[module]
+        module_stats = module_commit_stats.setdefault(public_module, {})
+        for path in files:
+            file_stats = file_commit_stats[path]
+            module_stats.setdefault("sha", set()).update(file_stats["sha"])
+            if (newest := file_stats["newest"]) > module_stats.get("newest", "1900-01-01"):
+                module_stats["newest"] = newest
+            if (oldest := file_stats["oldest"]) < module_stats.get("oldest", "9999-01-01"):
+                module_stats["oldest"] = oldest
+    for module, stats in module_commit_stats.items():
+        data[module]["oldest_commit"] = stats["oldest"]
+        data[module]["newest_commit"] = stats["newest"]
+        data[module]["commit_count"] = len(stats["sha"])
 
     with open("required.json", "rb") as file:
         required_modules = json.load(file)
@@ -52,7 +70,8 @@ def main():
 
 
     with PATH.open("w", newline="", encoding="utf-8") as file:
-        columns = ["name", "required", "category", "project_count"]
+        columns = ["name", "required", "category", "project_count",
+                   "oldest_commit", "newest_commit", "commit_count"]
         writer = csv.DictWriter(file, fieldnames=columns)
         writer.writeheader()
         writer.writerows(data.values())
