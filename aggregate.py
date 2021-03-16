@@ -26,18 +26,22 @@ def main():
     for category, modules in categories.items():
         for module in modules:
             data[module]["category"] = category
+    category_data = {category: {"name": category} for category in categories}
 
     module_commit_stats = {}
+    category_commit_stats = {}
     with open("file_map.json", "rb") as file:
         file_map = json.load(file)
     with open("commit_stats.json", "rb") as file:
         file_commit_stats = json.load(file)
     for module, files in file_map.items():
         public_module = private_to_public[module]
+        category = data[public_module]["category"]
         module_stats = module_commit_stats.setdefault(public_module, {})
         for path in files:
             file_stats = file_commit_stats[path]
             module_stats.setdefault("sha", set()).update(file_stats["sha"])
+            category_commit_stats.setdefault(category, set()).update(file_stats["sha"])
             if (newest := file_stats["newest"]) > module_stats.get("newest", "1900-01-01"):
                 module_stats["newest"] = newest
             if (oldest := file_stats["oldest"]) < module_stats.get("oldest", "9999-01-01"):
@@ -46,6 +50,8 @@ def main():
         data[module]["oldest_commit"] = stats["oldest"]
         data[module]["newest_commit"] = stats["newest"]
         data[module]["commit_count"] = len(stats["sha"])
+    for category, sha in category_commit_stats.items():
+        category_data[category]["commits"] = len(sha)
 
     with open("required.json", "rb") as file:
         required_modules = json.load(file)
@@ -67,6 +73,8 @@ def main():
             category_used_by[data[public_name]["category"]].add(project)
     for module, projects in used_by.items():
         data[module]["project_count"] = len(projects)
+    for category, projects in category_used_by.items():
+        category_data[category]["project_count"] = len(projects)
 
 
     with PATH.open("w", newline="", encoding="utf-8") as file:
@@ -77,10 +85,10 @@ def main():
         writer.writerows(data.values())
 
     with CATEGORY_USAGE_PATH.open("w", newline="", encoding="utf-8") as file:
-        writer = csv.writer(file)
-        writer.writerow(["category", "project_count"])
-        writer.writerows((category, len(users))
-                         for category, users in category_used_by.items())
+        columns = ["name", "project_count", "commits"]
+        writer = csv.DictWriter(file, fieldnames=columns)
+        writer.writeheader()
+        writer.writerows(category_data.values())
 
 
 if  __name__ == "__main__":

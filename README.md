@@ -10,7 +10,7 @@ To tweak how various things are treated, you can edit the JSON files and
 run `aggregate.py` to update it accordingly.
 
 The `category_usage.csv` counts the number of projects which use a specify
-module category.
+module category. It also tallies all the commits the category is made up of.
 
 The `stats.ipynb` is a Jupyter notebook which contains various charts that try
 to analyze the data from the CSV in various ways.
@@ -58,8 +58,4 @@ made on a specific file.
 
 XXX
 
-- Commit details (first commit, last commit, total commits, commits since released)
-- Release and date the module was introduced (inferred by the first date of a
-  `X.Y.0` release that comes after the earliest commit of any file for a module);
-  https://en.wikipedia.org/wiki/History_of_Python#Table_of_versions
 - Number of open PRs (based on files edited by PRs targeting `master`)
