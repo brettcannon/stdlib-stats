@@ -1,0 +1,18 @@
+query MoreFiles($node: ID!, $cursor: String) {
+  node(id: $node) {
+    ... on PullRequest {
+      number
+      files(after: $cursor, first: 100) {
+        pageInfo {
+          hasNextPage
+        }
+        edges {
+          cursor
+          node {
+            path
+          }
+        }
+      }
+    }
+  }
+}

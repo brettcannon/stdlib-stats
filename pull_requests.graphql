@@ -1,0 +1,16 @@
+query ($cursor: String) {
+  repository(owner: "python", name: "cpython") {
+    pullRequests(after: $cursor, first: 100, states: [OPEN], baseRefName: "master") {
+      pageInfo {
+        hasNextPage
+      }
+      edges {
+        cursor
+        node {
+          number
+          id
+        }
+      }
+    }
+  }
+}
