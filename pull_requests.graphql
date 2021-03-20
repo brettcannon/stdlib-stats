@@ -9,6 +9,17 @@ query ($cursor: String) {
         node {
           number
           id
+          files(first: 100) {
+            pageInfo {
+              hasNextPage
+            }
+            edges {
+              cursor
+              node {
+                path
+              }
+            }
+          }
         }
       }
     }
