@@ -53,6 +53,29 @@ def main():
     for category, sha in category_commit_stats.items():
         category_data[category]["commits"] = len(sha)
 
+    with open("pull_requests.json", "rb") as file:
+        pull_requests = json.load(file)
+    path_to_module = {}
+    for module, paths in file_map.items():
+        public_module = private_to_public[module]
+        for path in paths:
+            path_to_module[path] = public_module
+    module_prs = {module: set() for module in data}
+    category_prs = {category: set() for category in categories}
+    for pr, paths in pull_requests.items():
+        for path in paths:
+            try:
+                module = path_to_module[path]
+            except KeyError:
+                continue
+            category = data[module]["category"]
+            module_prs[module].add(pr)
+            category_prs[category].add(pr)
+    for module, prs in module_prs.items():
+        data[module]["pr_count"] = len(prs)
+    for category, prs in category_prs.items():
+        category_data[category]["pr_count"] = len(prs)
+
     with open("required.json", "rb") as file:
         required_modules = json.load(file)
     for module in required_modules:
@@ -79,13 +102,13 @@ def main():
 
     with PATH.open("w", newline="", encoding="utf-8") as file:
         columns = ["name", "required", "category", "project_count",
-                   "oldest_commit", "newest_commit", "commit_count"]
+                   "oldest_commit", "newest_commit", "commit_count", "pr_count"]
         writer = csv.DictWriter(file, fieldnames=columns)
         writer.writeheader()
         writer.writerows(data.values())
 
     with CATEGORY_USAGE_PATH.open("w", newline="", encoding="utf-8") as file:
-        columns = ["name", "project_count", "commits"]
+        columns = ["name", "project_count", "commits", "pr_count"]
         writer = csv.DictWriter(file, fieldnames=columns)
         writer.writeheader()
         writer.writerows(category_data.values())
