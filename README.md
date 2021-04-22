@@ -4,6 +4,10 @@ Various statistics on Python's standard library.
 
 See `stats.ipynb` for charts that show the data in various ways.
 
+You can also run an interactive Jupyter session using Binder:
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/brettcannon/stdlib-stats/main?filepath=stats.ipynb)
+
 ## Organized data
 
 `stdlib.csv` contains various details about the modules in the stdlib. The table
