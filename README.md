@@ -2,6 +2,8 @@
 
 Various statistics on Python's standard library.
 
+See `stats.ipynb` for charts that show the data in various ways.
+
 ## Organized data
 
 `stdlib.csv` contains various details about the modules in the stdlib. The table
@@ -55,7 +57,3 @@ The `__future__` module is specially treated and put in its own category.
 ### Commit stats per file
 `commit_stats.json` tracks the oldest, newest, and SHA hashes of all the commits
 made on a specific file.
-
-XXX
-
-- Number of open PRs (based on files edited by PRs targeting `master`)
