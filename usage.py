@@ -7,7 +7,6 @@ from typing import Any, Container
 
 
 class ImportVisitor(ast.NodeVisitor):
-
     def __init__(self, looking_for: Container[str]):
         self._looking_for = looking_for
         self.found = set()
@@ -26,7 +25,7 @@ class ImportVisitor(ast.NodeVisitor):
             self._handle_name(node.module)
 
 
-with open("module_names.json", "r", encoding="UTF-8") as file:
+with open("module_names.json", "rb") as file:
     module_names = frozenset(json.load(file))
 
 
@@ -60,8 +59,9 @@ for project_dir in pathlib.Path(sys.argv[1]).iterdir():
     if not project_count % 100:
         print(project_count)
 
-project_results = {project: sorted(modules)
-                   for project, modules in found_in_projects.items()}
+project_results = {
+    project: sorted(modules) for project, modules in found_in_projects.items()
+}
 
 with open("usage.json", "w", encoding="UTF-8") as file:
     json.dump(project_results, file, sort_keys=True, indent=2)

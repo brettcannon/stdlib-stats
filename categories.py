@@ -15,7 +15,7 @@ for line in index_lines:
     if cleaned_line.endswith(".rst"):
         category_filenames.append(cleaned_line)
 
-with open("module_names.json", "r", encoding="UTF-8") as file:
+with open("module_names.json", "rb") as file:
     module_names = frozenset(json.load(file))
 
 categories = {}
@@ -57,7 +57,7 @@ for category_filename in category_filenames:
     if members:
         categories[category_name] = sorted(members)
 
-with open("private_modules.json", "r", encoding="UTF-8") as file:
+with open("private_modules.json", "rb") as file:
     module_visibility = json.load(file)
 private_modules = {name for modules in module_visibility.values() for name in modules}
 
