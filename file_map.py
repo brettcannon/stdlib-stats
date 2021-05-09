@@ -10,9 +10,10 @@ import pathlib
 import sys
 
 
-REPO = repo=pathlib.Path(sys.argv[1])
-with open("module_names.json", "r", encoding="utf-8") as file:
+REPO = repo = pathlib.Path(sys.argv[1])
+with open("module_names.json", "rb") as file:
     MAPPING = {name: [] for name in json.load(file)}
+
 
 def relative_path(path):
     return path.relative_to(REPO).as_posix()
@@ -27,7 +28,12 @@ def add_directory(module, path):
     for item in path.iterdir():
         if item.is_file():
             add_path(module, item)
-        elif item.is_dir() and item.name not in {"clinic", "test", "tests", "idle_test"}:
+        elif item.is_dir() and item.name not in {
+            "clinic",
+            "test",
+            "tests",
+            "idle_test",
+        }:
             add_directory(module, item)
 
 
@@ -47,14 +53,27 @@ if __name__ == "__main__":
 
     for item in (REPO / "Modules").iterdir():
         if item.is_file():
-            if item.name in {"README", "Setup", "makesetup", "getpath.c",
-                             "config.c.in", "getbuildinfo.c", "main.c",
-                             "gc_weakref.txt", "testcapi_long.h"}:
+            if item.name in {
+                "README",
+                "Setup",
+                "makesetup",
+                "getpath.c",
+                "config.c.in",
+                "getbuildinfo.c",
+                "main.c",
+                "gc_weakref.txt",
+                "testcapi_long.h",
+            }:
                 continue
             if item.name.startswith("xx") or item.name.startswith("_test"):
                 continue
-            elif item.name in {"addrinfo.h", "getaddrinfo.c", "getnameinfo.c",
-                               "socketmodule.c", "socketmodule.h"}:
+            elif item.name in {
+                "addrinfo.h",
+                "getaddrinfo.c",
+                "getnameinfo.c",
+                "socketmodule.c",
+                "socketmodule.h",
+            }:
                 add_path("_socket", item)
             elif item.stem == "sre_lib":
                 add_path("_sre", item)

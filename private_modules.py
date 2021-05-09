@@ -8,7 +8,7 @@ import json
 import pathlib
 import sys
 
-with open("module_names.json", "r", encoding="utf-8") as file:
+with open("module_names.json", "rb") as file:
     module_names = frozenset(json.load(file))
 
 
@@ -24,7 +24,7 @@ public_modules = {
     "encodings",  # In codecs.rst
     "idlelib",  # For IDLE
     "_xxsubinterpreters",  # For testing subinterpreters
-    }
+}
 
 for item in library_docs.iterdir():
     filename = item.name
@@ -38,7 +38,7 @@ for item in library_docs.iterdir():
 public_modules = frozenset(public_modules)
 private_modules = module_names - public_modules
 
-with open("private_modules.json", "r", encoding="utf-8") as file:
+with open("private_modules.json", "rb") as file:
     module_mapping = json.load(file)
 written_public_modules = frozenset(module_mapping.keys())
 if diff := written_public_modules - public_modules:
@@ -47,8 +47,9 @@ if diff := written_public_modules - public_modules:
 elif diff := public_modules - written_public_modules:
     print("Public modules not recorded:", diff)
 
-written_private_modules = frozenset(name for names in module_mapping.values()
-                                            for name in names)
+written_private_modules = frozenset(
+    name for names in module_mapping.values() for name in names
+)
 if diff := private_modules - written_private_modules:
     print("Private modules not recorded:", diff)
 elif diff := written_private_modules - private_modules:
